@@ -162,3 +162,11 @@ In this same window, change the name of the **Server** field to Azure Analysis S
 From 55 min, if the data source password has been set, all partitions except the large volume partition will be processed through the automation account. In the sequence, the automation account creates and processes the large volume table partitions, makes a backup, and turns off Azure Analysis Services.
 
 ---
+
+## Author
+- Bruno Aurélio Rôzza de Moura Campos (brunocampos01@gmail.com) (https://www.linkedin.com/in/brunocampos01/)
+
+## Copyright
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Bruno A. R. M. Campos</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+---
