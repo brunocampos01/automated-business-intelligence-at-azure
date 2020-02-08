@@ -150,11 +150,7 @@ If it's paused, just click the **Start** and wait for the service to begin.
 
 6. The endpoint of the database will then be requested. Then at this time paste the link copied from Azure and wait for the environment preparation.
 
-<img src="images/analysis_services_endpoint.png" align="center" height=auto width=80%/>
-
 7. In the right menu, open directory **Data Sources** and open the connection with 2 clicks. Enter the password of the source database and test the connection. If everything goes right, confirm and save the password..
-
-<img src="images/analysis_services_connection.png" align="center" height=auto width=80%/>
 
 8. To avoid having to bring the data into Visual Studio (SSDT), change the following project properties.
 **Debug > TabularProject1 Properties > Deployment Options > Processing Option > Do Not Process**
