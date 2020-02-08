@@ -1,0 +1,836 @@
+DEBUG: Using PENTAHO_JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=E:\Kettle\java\jre-windows-x64
+DEBUG: _PENTAHO_JAVA=E:\Kettle\java\jre-windows-x64\bin\java.exe
+
+E:\Kettle>"E:\Kettle\java\jre-windows-x64\bin\java.exe"  "-Xms1024m" "-Xmx2048m" "-XX:MaxPermSize=256m" "-Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\launcher.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen -initialDir "C:\Windows\system32"\ /file:"E:\sajinsights\ETL\Jobs\JOB_GERAL.kjb" /level:Basic
+01:30:03,021 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+01:30:07,176 INFO  [KarafInstance]
+*******************************************************************************
+*** Karaf Instance Number: 1 at E:\Kettle\.\system\karaf\caches\kitchen\dat ***
+***   a-1                                                                   ***
+*** FastBin Provider Port:52901                                             ***
+*** Karaf Port:8802                                                         ***
+*** OSGI Service Port:9051                                                  ***
+*******************************************************************************
+2020/01/15 01:30:08 - Kitchen - Logging is at level : Log básico
+2020/01/15 01:30:08 - Kitchen - Start of run.
+2020/01/15 01:30:13 - JOB_GERAL - Início da execução do job
+2020/01/15 01:30:13 - JOB_GERAL - Starting entry [Executa Carga STG]
+2020/01/15 01:30:13 - Executa Carga STG - Using run configuration [Pentaho local]
+2020/01/15 01:30:13 - STG - Starting entry [STGAREAATUACAO]
+2020/01/15 01:30:14 - STGAREAATUACAO - Using run configuration [Pentaho local]
+2020/01/15 01:30:14 - STGAREAATUACAO - Using legacy execution engine
+2020/01/15 01:30:14 - STGAREAATUACAO - Expedindo in?cio para transforma??o [STGAREAATUACAO]
+2020/01/15 01:30:14 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:30:14 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:30:14 - Table input.0 - Finished processing (I=23, O=0, R=0, W=23, U=0, E=0)
+2020/01/15 01:30:14 - Table output.0 - Finished processing (I=0, O=23, R=23, W=23, U=0, E=0)
+2020/01/15 01:30:14 - STG - Starting entry [Success]
+2020/01/15 01:30:14 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:30:14 - STG - Finished job entry [STGAREAATUACAO] (result=[true])
+2020/01/15 01:30:14 - STG - Starting entry [STGASSUNTO]
+2020/01/15 01:30:14 - STGASSUNTO - Using run configuration [Pentaho local]
+2020/01/15 01:30:14 - STGASSUNTO - Using legacy execution engine
+2020/01/15 01:30:14 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2020/01/15 01:30:14 - STGASSUNTO - Expedindo in?cio para transforma??o [STGASSUNTO]
+2020/01/15 01:30:14 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:30:14 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:30:14 - Table input.0 - Finished processing (I=4040, O=0, R=0, W=4040, U=0, E=0)
+2020/01/15 01:30:14 - Table output.0 - Finished processing (I=0, O=4040, R=4040, W=4040, U=0, E=0)
+2020/01/15 01:30:14 - STG - Starting entry [Success]
+2020/01/15 01:30:14 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:30:14 - STG - Finished job entry [STGASSUNTO] (result=[true])
+2020/01/15 01:30:14 - STG - Starting entry [STGATIVNAOPROCED]
+2020/01/15 01:30:15 - STGATIVNAOPROCED - Using run configuration [Pentaho local]
+2020/01/15 01:30:15 - STGATIVNAOPROCED - Using legacy execution engine
+2020/01/15 01:30:15 - STGATIVNAOPROCED - Expedindo in?cio para transforma??o [STGATIVNAOPROCED]
+2020/01/15 01:30:15 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:30:15 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:30:15 - Table input.0 - Finished processing (I=15, O=0, R=0, W=15, U=0, E=0)
+2020/01/15 01:30:15 - Table output.0 - Finished processing (I=0, O=15, R=15, W=15, U=0, E=0)
+2020/01/15 01:30:15 - STG - Starting entry [Success]
+2020/01/15 01:30:15 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:30:15 - STG - Finished job entry [STGATIVNAOPROCED] (result=[true])
+2020/01/15 01:30:15 - STG - Starting entry [STGCLASSE]
+2020/01/15 01:30:15 - STGCLASSE - Using run configuration [Pentaho local]
+2020/01/15 01:30:15 - STGCLASSE - Using legacy execution engine
+2020/01/15 01:30:15 - STGCLASSE - Expedindo in?cio para transforma??o [STGCLASSE]
+2020/01/15 01:30:15 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:30:15 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:30:15 - Table input.0 - Finished processing (I=1167, O=0, R=0, W=1167, U=0, E=0)
+2020/01/15 01:30:15 - Table output.0 - Finished processing (I=0, O=1167, R=1167, W=1167, U=0, E=0)
+2020/01/15 01:30:15 - STG - Starting entry [Success]
+2020/01/15 01:30:15 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:30:15 - STG - Finished job entry [STGCLASSE] (result=[true])
+2020/01/15 01:30:15 - STG - Starting entry [STGCLASSIFICACAO]
+2020/01/15 01:30:15 - STGCLASSIFICACAO - Using run configuration [Pentaho local]
+2020/01/15 01:30:15 - STGCLASSIFICACAO - Using legacy execution engine
+2020/01/15 01:30:15 - STGCLASSIFICACAO - Expedindo in?cio para transforma??o [STGCLASSIFICACAO]
+2020/01/15 01:30:15 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:30:15 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:30:15 - Table input.0 - Finished processing (I=52, O=0, R=0, W=52, U=0, E=0)
+2020/01/15 01:30:15 - Table output.0 - Finished processing (I=0, O=52, R=52, W=52, U=0, E=0)
+2020/01/15 01:30:15 - STG - Starting entry [Success]
+2020/01/15 01:30:15 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:30:15 - STG - Finished job entry [STGCLASSIFICACAO] (result=[true])
+2020/01/15 01:30:15 - STG - Starting entry [STGCOMARCA]
+2020/01/15 01:30:15 - STGCOMARCA - Using run configuration [Pentaho local]
+2020/01/15 01:30:15 - STGCOMARCA - Using legacy execution engine
+2020/01/15 01:30:15 - STGCOMARCA - Expedindo in?cio para transforma??o [STGCOMARCA]
+2020/01/15 01:30:15 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:30:15 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:30:15 - Table input.0 - Finished processing (I=70, O=0, R=0, W=70, U=0, E=0)
+2020/01/15 01:30:15 - Table output.0 - Finished processing (I=0, O=70, R=70, W=70, U=0, E=0)
+2020/01/15 01:30:15 - STG - Starting entry [Success]
+2020/01/15 01:30:15 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:30:15 - STG - Finished job entry [STGCOMARCA] (result=[true])
+2020/01/15 01:30:15 - STG - Starting entry [STGENTRANCIA]
+2020/01/15 01:30:15 - STGENTRANCIA - Using run configuration [Pentaho local]
+2020/01/15 01:30:15 - STGENTRANCIA - Using legacy execution engine
+2020/01/15 01:30:15 - STGENTRANCIA - Expedindo in?cio para transforma??o [STGENTRANCIA]
+2020/01/15 01:30:15 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:30:15 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:30:15 - Table input.0 - Finished processing (I=5, O=0, R=0, W=5, U=0, E=0)
+2020/01/15 01:30:15 - Table output.0 - Finished processing (I=0, O=5, R=5, W=5, U=0, E=0)
+2020/01/15 01:30:15 - STG - Starting entry [Success]
+2020/01/15 01:30:15 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:30:15 - STG - Finished job entry [STGENTRANCIA] (result=[true])
+2020/01/15 01:30:15 - STG - Starting entry [STGESPECIALIDADE]
+2020/01/15 01:30:15 - STGESPECIALIDADE - Using run configuration [Pentaho local]
+2020/01/15 01:30:15 - STGESPECIALIDADE - Using legacy execution engine
+2020/01/15 01:30:15 - STGESPECIALIDADE - Expedindo in?cio para transforma??o [STGESPECIALIDADE]
+2020/01/15 01:30:15 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:30:15 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:30:15 - Table input.0 - Finished processing (I=25, O=0, R=0, W=25, U=0, E=0)
+2020/01/15 01:30:15 - Table output.0 - Finished processing (I=0, O=25, R=25, W=25, U=0, E=0)
+2020/01/15 01:30:15 - STG - Starting entry [Success]
+2020/01/15 01:30:15 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:30:15 - STG - Finished job entry [STGESPECIALIDADE] (result=[true])
+2020/01/15 01:30:15 - STG - Starting entry [STGFONTEORIGEM]
+2020/01/15 01:30:15 - STGFONTEORIGEM - Using run configuration [Pentaho local]
+2020/01/15 01:30:15 - STGFONTEORIGEM - Using legacy execution engine
+2020/01/15 01:30:15 - STGFONTEORIGEM - Expedindo in?cio para transforma??o [STGFONTEORIGEM]
+2020/01/15 01:30:15 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:30:15 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:30:15 - Table input.0 - Finished processing (I=15, O=0, R=0, W=15, U=0, E=0)
+2020/01/15 01:30:15 - Table output.0 - Finished processing (I=0, O=15, R=15, W=15, U=0, E=0)
+2020/01/15 01:30:15 - STG - Starting entry [Success]
+2020/01/15 01:30:15 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:30:15 - STG - Finished job entry [STGFONTEORIGEM] (result=[true])
+2020/01/15 01:30:15 - STG - Starting entry [STGLOCAL]
+2020/01/15 01:30:15 - STGLOCAL - Using run configuration [Pentaho local]
+2020/01/15 01:30:15 - STGLOCAL - Using legacy execution engine
+2020/01/15 01:30:15 - STGLOCAL - Expedindo in?cio para transforma??o [STGLOCAL]
+2020/01/15 01:30:15 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:30:15 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:30:15 - Table input.0 - Finished processing (I=914, O=0, R=0, W=914, U=0, E=0)
+2020/01/15 01:30:15 - Table output.0 - Finished processing (I=0, O=914, R=914, W=914, U=0, E=0)
+2020/01/15 01:30:15 - STG - Starting entry [Success]
+2020/01/15 01:30:15 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:30:15 - STG - Finished job entry [STGLOCAL] (result=[true])
+2020/01/15 01:30:15 - STG - Starting entry [STGMUNICIPIO]
+2020/01/15 01:30:15 - STGMUNICIPIO - Using run configuration [Pentaho local]
+2020/01/15 01:30:15 - STGMUNICIPIO - Using legacy execution engine
+2020/01/15 01:30:15 - STGMUNICIPIO - Expedindo in?cio para transforma??o [STGMUNICIPIO]
+2020/01/15 01:30:15 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:30:16 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:30:16 - Table input.0 - Finished processing (I=12718, O=0, R=0, W=12718, U=0, E=0)
+2020/01/15 01:30:16 - Table output.0 - Finished processing (I=0, O=12718, R=12718, W=12718, U=0, E=0)
+2020/01/15 01:30:16 - STG - Starting entry [Success]
+2020/01/15 01:30:16 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:30:16 - STG - Finished job entry [STGMUNICIPIO] (result=[true])
+2020/01/15 01:30:16 - STG - Starting entry [STGOBJETOFILA]
+2020/01/15 01:30:16 - STGOBJETOFILA - Using run configuration [Pentaho local]
+2020/01/15 01:30:16 - STGOBJETOFILA - Using legacy execution engine
+2020/01/15 01:30:16 - STGOBJETOFILA - Expedindo in?cio para transforma??o [STGOBJETOFILA]
+2020/01/15 01:30:16 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:30:16 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:30:16 - Table input.0 - Finished processing (I=5849, O=0, R=0, W=5849, U=0, E=0)
+2020/01/15 01:30:16 - Table output.0 - Finished processing (I=0, O=5849, R=5849, W=5849, U=0, E=0)
+2020/01/15 01:30:16 - STG - Starting entry [Success]
+2020/01/15 01:30:16 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:30:16 - STG - Finished job entry [STGOBJETOFILA] (result=[true])
+2020/01/15 01:30:16 - STG - Starting entry [STGPENDENCIAPRAZO]
+2020/01/15 01:30:16 - STGPENDENCIAPRAZO - Using run configuration [Pentaho local]
+2020/01/15 01:30:16 - STGPENDENCIAPRAZO - Using legacy execution engine
+2020/01/15 01:30:16 - STGPENDENCIAPRAZO - Expedindo in?cio para transforma??o [STGPENDENCIAPRAZO]
+2020/01/15 01:30:16 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:30:41 - Table input.0 - linenr 50000
+2020/01/15 01:30:41 - Table output.0 - linenr 50000
+2020/01/15 01:30:43 - Table input.0 - linenr 100000
+2020/01/15 01:30:43 - Table output.0 - linenr 100000
+2020/01/15 01:30:44 - Table input.0 - linenr 150000
+2020/01/15 01:30:44 - Table output.0 - linenr 150000
+2020/01/15 01:30:46 - Table input.0 - linenr 200000
+2020/01/15 01:30:46 - Table output.0 - linenr 200000
+2020/01/15 01:30:47 - Table input.0 - linenr 250000
+2020/01/15 01:30:47 - Table output.0 - linenr 250000
+2020/01/15 01:30:48 - Table input.0 - linenr 300000
+2020/01/15 01:30:49 - Table output.0 - linenr 300000
+2020/01/15 01:30:50 - Table input.0 - linenr 350000
+2020/01/15 01:30:50 - Table output.0 - linenr 350000
+2020/01/15 01:30:51 - Table input.0 - linenr 400000
+2020/01/15 01:30:51 - Table output.0 - linenr 400000
+2020/01/15 01:30:53 - Table input.0 - linenr 450000
+2020/01/15 01:30:53 - Table output.0 - linenr 450000
+2020/01/15 01:30:54 - Table input.0 - linenr 500000
+2020/01/15 01:30:54 - Table output.0 - linenr 500000
+2020/01/15 01:30:55 - Table input.0 - linenr 550000
+2020/01/15 01:30:55 - Table output.0 - linenr 550000
+2020/01/15 01:30:57 - Table input.0 - linenr 600000
+2020/01/15 01:30:57 - Table output.0 - linenr 600000
+2020/01/15 01:30:58 - Table input.0 - linenr 650000
+2020/01/15 01:30:58 - Table output.0 - linenr 650000
+2020/01/15 01:31:00 - Table input.0 - linenr 700000
+2020/01/15 01:31:00 - Table output.0 - linenr 700000
+2020/01/15 01:31:01 - Table input.0 - linenr 750000
+2020/01/15 01:31:01 - Table output.0 - linenr 750000
+2020/01/15 01:31:02 - Table input.0 - linenr 800000
+2020/01/15 01:31:02 - Table output.0 - linenr 800000
+2020/01/15 01:31:04 - Table input.0 - linenr 850000
+2020/01/15 01:31:04 - Table output.0 - linenr 850000
+2020/01/15 01:31:05 - Table input.0 - linenr 900000
+2020/01/15 01:31:05 - Table output.0 - linenr 900000
+2020/01/15 01:31:06 - Table input.0 - linenr 950000
+2020/01/15 01:31:06 - Table output.0 - linenr 950000
+2020/01/15 01:31:08 - Table input.0 - linenr 1000000
+2020/01/15 01:31:08 - Table output.0 - linenr 1000000
+2020/01/15 01:31:09 - Table input.0 - linenr 1050000
+2020/01/15 01:31:09 - Table output.0 - linenr 1050000
+2020/01/15 01:31:10 - Table input.0 - linenr 1100000
+2020/01/15 01:31:10 - Table output.0 - linenr 1100000
+2020/01/15 01:31:12 - Table input.0 - linenr 1150000
+2020/01/15 01:31:12 - Table output.0 - linenr 1150000
+2020/01/15 01:31:13 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:31:13 - Table input.0 - Finished processing (I=1178946, O=0, R=0, W=1178946, U=0, E=0)
+2020/01/15 01:31:13 - Table output.0 - Finished processing (I=0, O=1178946, R=1178946, W=1178946, U=0, E=0)
+2020/01/15 01:31:13 - STG - Starting entry [Success]
+2020/01/15 01:31:13 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:31:13 - STG - Finished job entry [STGPENDENCIAPRAZO] (result=[true])
+2020/01/15 01:31:13 - STG - Starting entry [STGPROCESSO]
+2020/01/15 01:31:13 - STGPROCESSO - Using run configuration [Pentaho local]
+2020/01/15 01:31:13 - STGPROCESSO - Using legacy execution engine
+2020/01/15 01:31:13 - STGPROCESSO - Expedindo in?cio para transforma??o [STGPROCESSO]
+2020/01/15 01:31:13 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:31:47 - Table input.0 - linenr 50000
+2020/01/15 01:31:47 - Table output.0 - linenr 50000
+2020/01/15 01:31:50 - Table input.0 - linenr 100000
+2020/01/15 01:31:50 - Table output.0 - linenr 100000
+2020/01/15 01:31:53 - Table input.0 - linenr 150000
+2020/01/15 01:31:53 - Table output.0 - linenr 150000
+2020/01/15 01:31:57 - Table input.0 - linenr 200000
+2020/01/15 01:31:57 - Table output.0 - linenr 200000
+2020/01/15 01:32:00 - Table input.0 - linenr 250000
+2020/01/15 01:32:00 - Table output.0 - linenr 250000
+2020/01/15 01:32:04 - Table input.0 - linenr 300000
+2020/01/15 01:32:04 - Table output.0 - linenr 300000
+2020/01/15 01:32:07 - Table input.0 - linenr 350000
+2020/01/15 01:32:07 - Table output.0 - linenr 350000
+2020/01/15 01:32:10 - Table input.0 - linenr 400000
+2020/01/15 01:32:10 - Table output.0 - linenr 400000
+2020/01/15 01:32:14 - Table input.0 - linenr 450000
+2020/01/15 01:32:14 - Table output.0 - linenr 450000
+2020/01/15 01:32:17 - Table input.0 - linenr 500000
+2020/01/15 01:32:17 - Table output.0 - linenr 500000
+2020/01/15 01:32:20 - Table input.0 - linenr 550000
+2020/01/15 01:32:20 - Table output.0 - linenr 550000
+2020/01/15 01:32:23 - Table input.0 - linenr 600000
+2020/01/15 01:32:23 - Table output.0 - linenr 600000
+2020/01/15 01:32:26 - Table input.0 - linenr 650000
+2020/01/15 01:32:26 - Table output.0 - linenr 650000
+2020/01/15 01:32:29 - Table input.0 - linenr 700000
+2020/01/15 01:32:29 - Table output.0 - linenr 700000
+2020/01/15 01:32:33 - Table input.0 - linenr 750000
+2020/01/15 01:32:33 - Table output.0 - linenr 750000
+2020/01/15 01:32:36 - Table input.0 - linenr 800000
+2020/01/15 01:32:36 - Table output.0 - linenr 800000
+2020/01/15 01:32:39 - Table input.0 - linenr 850000
+2020/01/15 01:32:39 - Table output.0 - linenr 850000
+2020/01/15 01:32:42 - Table input.0 - linenr 900000
+2020/01/15 01:32:43 - Table output.0 - linenr 900000
+2020/01/15 01:32:46 - Table input.0 - linenr 950000
+2020/01/15 01:32:46 - Table output.0 - linenr 950000
+2020/01/15 01:32:49 - Table input.0 - linenr 1000000
+2020/01/15 01:32:49 - Table output.0 - linenr 1000000
+2020/01/15 01:32:52 - Table input.0 - linenr 1050000
+2020/01/15 01:32:52 - Table output.0 - linenr 1050000
+2020/01/15 01:32:55 - Table input.0 - linenr 1100000
+2020/01/15 01:32:55 - Table output.0 - linenr 1100000
+2020/01/15 01:32:59 - Table input.0 - linenr 1150000
+2020/01/15 01:32:59 - Table output.0 - linenr 1150000
+2020/01/15 01:33:02 - Table input.0 - linenr 1200000
+2020/01/15 01:33:02 - Table output.0 - linenr 1200000
+2020/01/15 01:33:05 - Table input.0 - linenr 1250000
+2020/01/15 01:33:05 - Table output.0 - linenr 1250000
+2020/01/15 01:33:08 - Table input.0 - linenr 1300000
+2020/01/15 01:33:08 - Table output.0 - linenr 1300000
+2020/01/15 01:33:12 - Table input.0 - linenr 1350000
+2020/01/15 01:33:12 - Table output.0 - linenr 1350000
+2020/01/15 01:33:15 - Table input.0 - linenr 1400000
+2020/01/15 01:33:15 - Table output.0 - linenr 1400000
+2020/01/15 01:33:18 - Table input.0 - linenr 1450000
+2020/01/15 01:33:18 - Table output.0 - linenr 1450000
+2020/01/15 01:33:22 - Table input.0 - linenr 1500000
+2020/01/15 01:33:22 - Table output.0 - linenr 1500000
+2020/01/15 01:33:25 - Table input.0 - linenr 1550000
+2020/01/15 01:33:25 - Table output.0 - linenr 1550000
+2020/01/15 01:33:26 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:33:26 - Table input.0 - Finished processing (I=1573207, O=0, R=0, W=1573207, U=0, E=0)
+2020/01/15 01:33:26 - Table output.0 - Finished processing (I=0, O=1573207, R=1573207, W=1573207, U=0, E=0)
+2020/01/15 01:33:26 - STG - Starting entry [Success]
+2020/01/15 01:33:26 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:33:26 - STG - Finished job entry [STGPROCESSO] (result=[true])
+2020/01/15 01:33:26 - STG - Starting entry [STGPROCESSOMV]
+2020/01/15 01:33:26 - STGPROCESSOMV - Using run configuration [Pentaho local]
+2020/01/15 01:33:26 - STGPROCESSOMV - Using legacy execution engine
+2020/01/15 01:33:26 - STGPROCESSOMV - Expedindo in?cio para transforma??o [STGPROCESSOMV]
+2020/01/15 01:33:26 - Destination_Tab_STGPROCESSOMV.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:34:03 - Source_Query_ProcessoMv.0 - linenr 50000
+2020/01/15 01:34:03 - Destination_Tab_STGPROCESSOMV.0 - linenr 50000
+2020/01/15 01:34:05 - Source_Query_ProcessoMv.0 - linenr 100000
+2020/01/15 01:34:05 - Destination_Tab_STGPROCESSOMV.0 - linenr 100000
+2020/01/15 01:34:07 - Source_Query_ProcessoMv.0 - linenr 150000
+2020/01/15 01:34:07 - Destination_Tab_STGPROCESSOMV.0 - linenr 150000
+2020/01/15 01:34:09 - Source_Query_ProcessoMv.0 - linenr 200000
+2020/01/15 01:34:09 - Destination_Tab_STGPROCESSOMV.0 - linenr 200000
+2020/01/15 01:34:10 - Source_Query_ProcessoMv.0 - linenr 250000
+2020/01/15 01:34:10 - Destination_Tab_STGPROCESSOMV.0 - linenr 250000
+2020/01/15 01:34:12 - Source_Query_ProcessoMv.0 - linenr 300000
+2020/01/15 01:34:12 - Destination_Tab_STGPROCESSOMV.0 - linenr 300000
+2020/01/15 01:34:14 - Source_Query_ProcessoMv.0 - Finished reading query, closing connection.
+2020/01/15 01:34:14 - Source_Query_ProcessoMv.0 - Finished processing (I=339103, O=0, R=0, W=339103, U=0, E=0)
+2020/01/15 01:34:14 - Destination_Tab_STGPROCESSOMV.0 - Finished processing (I=0, O=339103, R=339103, W=339103, U=0, E=0)
+2020/01/15 01:34:14 - STG - Starting entry [Success]
+2020/01/15 01:34:14 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:34:14 - STG - Finished job entry [STGPROCESSOMV] (result=[true])
+2020/01/15 01:34:14 - STG - Starting entry [STGPROGRAMA]
+2020/01/15 01:34:14 - STGPROGRAMA - Using run configuration [Pentaho local]
+2020/01/15 01:34:14 - STGPROGRAMA - Using legacy execution engine
+2020/01/15 01:34:14 - STGPROGRAMA - Expedindo in?cio para transforma??o [STGPROGRAMA]
+2020/01/15 01:34:14 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:34:14 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:34:14 - Table input.0 - Finished processing (I=9, O=0, R=0, W=9, U=0, E=0)
+2020/01/15 01:34:14 - Table output.0 - Finished processing (I=0, O=9, R=9, W=9, U=0, E=0)
+2020/01/15 01:34:14 - STG - Starting entry [Success]
+2020/01/15 01:34:14 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:34:14 - STG - Finished job entry [STGPROGRAMA] (result=[true])
+2020/01/15 01:34:14 - STG - Starting entry [STGSETOR]
+2020/01/15 01:34:14 - STGSETOR - Using run configuration [Pentaho local]
+2020/01/15 01:34:14 - STGSETOR - Using legacy execution engine
+2020/01/15 01:34:14 - STGSETOR - Expedindo in?cio para transforma??o [STGSETOR]
+2020/01/15 01:34:14 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:34:14 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:34:14 - Table input.0 - Finished processing (I=15, O=0, R=0, W=15, U=0, E=0)
+2020/01/15 01:34:14 - Table output.0 - Finished processing (I=0, O=15, R=15, W=15, U=0, E=0)
+2020/01/15 01:34:14 - STG - Starting entry [Success]
+2020/01/15 01:34:14 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:34:14 - STG - Finished job entry [STGSETOR] (result=[true])
+2020/01/15 01:34:14 - STG - Starting entry [STGSITUACAOPROCESSO]
+2020/01/15 01:34:14 - STGSITUACAOPROCESSO - Using run configuration [Pentaho local]
+2020/01/15 01:34:14 - STGSITUACAOPROCESSO - Using legacy execution engine
+2020/01/15 01:34:14 - STGSITUACAOPROCESSO - Expedindo in?cio para transforma??o [STGSITUACAOPROCESSO]
+2020/01/15 01:34:14 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:34:14 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:34:14 - Table input.0 - Finished processing (I=27, O=0, R=0, W=27, U=0, E=0)
+2020/01/15 01:34:14 - Table output.0 - Finished processing (I=0, O=27, R=27, W=27, U=0, E=0)
+2020/01/15 01:34:14 - STG - Starting entry [Success]
+2020/01/15 01:34:14 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:34:14 - STG - Finished job entry [STGSITUACAOPROCESSO] (result=[true])
+2020/01/15 01:34:14 - STG - Starting entry [STGTIPOPROCADM]
+2020/01/15 01:34:14 - STGTIPOPROCADM - Using run configuration [Pentaho local]
+2020/01/15 01:34:14 - STGTIPOPROCADM - Using legacy execution engine
+2020/01/15 01:34:14 - STGTIPOPROCADM - Expedindo in?cio para transforma??o [STGTIPOPROCADM]
+2020/01/15 01:34:14 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:34:14 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:34:14 - Table input.0 - Finished processing (I=4, O=0, R=0, W=4, U=0, E=0)
+2020/01/15 01:34:14 - Table output.0 - Finished processing (I=0, O=4, R=4, W=4, U=0, E=0)
+2020/01/15 01:34:14 - STG - Starting entry [Success]
+2020/01/15 01:34:14 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:34:14 - STG - Finished job entry [STGTIPOPROCADM] (result=[true])
+2020/01/15 01:34:14 - STG - Starting entry [STGTIPOATENDIMENTO]
+2020/01/15 01:34:14 - STGTIPOATENDIMENTO - Using run configuration [Pentaho local]
+2020/01/15 01:34:14 - STGTIPOATENDIMENTO - Using legacy execution engine
+2020/01/15 01:34:14 - STGTIPOATENDIMENTO - Expedindo in?cio para transforma??o [STGTIPOATENDIMENTO]
+2020/01/15 01:34:14 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:34:14 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:34:14 - Table input.0 - Finished processing (I=7, O=0, R=0, W=7, U=0, E=0)
+2020/01/15 01:34:14 - Table output.0 - Finished processing (I=0, O=7, R=7, W=7, U=0, E=0)
+2020/01/15 01:34:14 - STG - Starting entry [Success]
+2020/01/15 01:34:14 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:34:14 - STG - Finished job entry [STGTIPOATENDIMENTO] (result=[true])
+2020/01/15 01:34:14 - STG - Starting entry [STGTIPOEXTRAJUDICI]
+2020/01/15 01:34:14 - STGTIPOEXTRAJUDICI - Using run configuration [Pentaho local]
+2020/01/15 01:34:14 - STGTIPOEXTRAJUDICI - Using legacy execution engine
+2020/01/15 01:34:14 - STGTIPOEXTRAJUDICI - Expedindo in?cio para transforma??o [STGTIPOEXTRAJUDICI]
+2020/01/15 01:34:14 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:34:14 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:34:14 - Table input.0 - Finished processing (I=23, O=0, R=0, W=23, U=0, E=0)
+2020/01/15 01:34:14 - Table output.0 - Finished processing (I=0, O=23, R=23, W=23, U=0, E=0)
+2020/01/15 01:34:14 - STG - Starting entry [Success]
+2020/01/15 01:34:14 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:34:14 - STG - Finished job entry [STGTIPOEXTRAJUDICI] (result=[true])
+2020/01/15 01:34:14 - STG - Starting entry [STGVINCULOPROC]
+2020/01/15 01:34:14 - STGVINCULOPROC - Using run configuration [Pentaho local]
+2020/01/15 01:34:14 - STGVINCULOPROC - Using legacy execution engine
+2020/01/15 01:34:14 - STGVINCULOPROC - Expedindo in?cio para transforma??o [STGVINCULOPROC]
+2020/01/15 01:34:14 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:34:22 - Table input.0 - linenr 50000
+2020/01/15 01:34:22 - Table output.0 - linenr 50000
+2020/01/15 01:34:24 - Table input.0 - linenr 100000
+2020/01/15 01:34:24 - Table output.0 - linenr 100000
+2020/01/15 01:34:26 - Table input.0 - linenr 150000
+2020/01/15 01:34:26 - Table output.0 - linenr 150000
+2020/01/15 01:34:28 - Table input.0 - linenr 200000
+2020/01/15 01:34:28 - Table output.0 - linenr 200000
+2020/01/15 01:34:30 - Table input.0 - linenr 250000
+2020/01/15 01:34:30 - Table output.0 - linenr 250000
+2020/01/15 01:34:31 - Table input.0 - linenr 300000
+2020/01/15 01:34:31 - Table output.0 - linenr 300000
+2020/01/15 01:34:33 - Table input.0 - linenr 350000
+2020/01/15 01:34:33 - Table output.0 - linenr 350000
+2020/01/15 01:34:33 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:34:33 - Table input.0 - Finished processing (I=354421, O=0, R=0, W=354421, U=0, E=0)
+2020/01/15 01:34:34 - Table output.0 - Finished processing (I=0, O=354421, R=354421, W=354421, U=0, E=0)
+2020/01/15 01:34:34 - STG - Starting entry [Success]
+2020/01/15 01:34:34 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:34:34 - STG - Finished job entry [STGVINCULOPROC] (result=[true])
+2020/01/15 01:34:34 - STG - Starting entry [STGUSUARIO]
+2020/01/15 01:34:34 - STGUSUARIO - Using run configuration [Pentaho local]
+2020/01/15 01:34:34 - STGUSUARIO - Using legacy execution engine
+2020/01/15 01:34:34 - STGUSUARIO - Expedindo in?cio para transforma??o [STGUSUARIO]
+2020/01/15 01:34:34 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:34:34 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:34:34 - Table input.0 - Finished processing (I=3683, O=0, R=0, W=3683, U=0, E=0)
+2020/01/15 01:34:34 - Table output.0 - Finished processing (I=0, O=3683, R=3683, W=3683, U=0, E=0)
+2020/01/15 01:34:34 - STG - Starting entry [Success]
+2020/01/15 01:34:34 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:34:34 - STG - Finished job entry [STGUSUARIO] (result=[true])
+2020/01/15 01:34:34 - STG - Starting entry [STGTIPOPROCESSO]
+2020/01/15 01:34:34 - STGTIPOPROCESSO - Using run configuration [Pentaho local]
+2020/01/15 01:34:34 - STGTIPOPROCESSO - Using legacy execution engine
+2020/01/15 01:34:34 - STGTIPOPROCESSO - Expedindo in?cio para transforma??o [STGTIPOPROCESSO]
+2020/01/15 01:34:34 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:34:34 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:34:34 - Table input.0 - Finished processing (I=86, O=0, R=0, W=86, U=0, E=0)
+2020/01/15 01:34:34 - Table output.0 - Finished processing (I=0, O=86, R=86, W=86, U=0, E=0)
+2020/01/15 01:34:34 - STG - Starting entry [Success]
+2020/01/15 01:34:34 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:34:34 - STG - Finished job entry [STGTIPOPROCESSO] (result=[true])
+2020/01/15 01:34:34 - STG - Starting entry [STGPETICIONAMENTO]
+2020/01/15 01:34:34 - STGPETICIONAMENTO - Using run configuration [Pentaho local]
+2020/01/15 01:34:34 - STGPETICIONAMENTO - Using legacy execution engine
+2020/01/15 01:34:34 - STGPETICIONAMENTO - Expedindo in?cio para transforma??o [STGPETICIONAMENTO]
+2020/01/15 01:34:34 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:35:35 - Table input.0 - linenr 50000
+2020/01/15 01:35:35 - Table output.0 - linenr 50000
+2020/01/15 01:35:37 - Table input.0 - linenr 100000
+2020/01/15 01:35:37 - Table output.0 - linenr 100000
+2020/01/15 01:35:39 - Table input.0 - linenr 150000
+2020/01/15 01:35:39 - Table output.0 - linenr 150000
+2020/01/15 01:35:41 - Table input.0 - linenr 200000
+2020/01/15 01:35:41 - Table output.0 - linenr 200000
+2020/01/15 01:35:43 - Table input.0 - linenr 250000
+2020/01/15 01:35:43 - Table output.0 - linenr 250000
+2020/01/15 01:35:45 - Table input.0 - linenr 300000
+2020/01/15 01:35:45 - Table output.0 - linenr 300000
+2020/01/15 01:35:46 - Table input.0 - linenr 350000
+2020/01/15 01:35:46 - Table output.0 - linenr 350000
+2020/01/15 01:35:48 - Table input.0 - linenr 400000
+2020/01/15 01:35:48 - Table output.0 - linenr 400000
+2020/01/15 01:35:50 - Table input.0 - linenr 450000
+2020/01/15 01:35:50 - Table output.0 - linenr 450000
+2020/01/15 01:35:52 - Table input.0 - linenr 500000
+2020/01/15 01:35:52 - Table output.0 - linenr 500000
+2020/01/15 01:35:54 - Table input.0 - linenr 550000
+2020/01/15 01:35:54 - Table output.0 - linenr 550000
+2020/01/15 01:35:55 - Table input.0 - linenr 600000
+2020/01/15 01:35:55 - Table output.0 - linenr 600000
+2020/01/15 01:35:57 - Table input.0 - linenr 650000
+2020/01/15 01:35:58 - Table output.0 - linenr 650000
+2020/01/15 01:36:00 - Table input.0 - linenr 700000
+2020/01/15 01:36:00 - Table output.0 - linenr 700000
+2020/01/15 01:36:01 - Table input.0 - linenr 750000
+2020/01/15 01:36:01 - Table output.0 - linenr 750000
+2020/01/15 01:36:02 - Table input.0 - linenr 800000
+2020/01/15 01:36:02 - Table output.0 - linenr 800000
+2020/01/15 01:36:04 - Table input.0 - linenr 850000
+2020/01/15 01:36:04 - Table output.0 - linenr 850000
+2020/01/15 01:36:06 - Table input.0 - linenr 900000
+2020/01/15 01:36:06 - Table output.0 - linenr 900000
+2020/01/15 01:36:07 - Table input.0 - linenr 950000
+2020/01/15 01:36:07 - Table output.0 - linenr 950000
+2020/01/15 01:36:08 - Table input.0 - linenr 1000000
+2020/01/15 01:36:08 - Table output.0 - linenr 1000000
+2020/01/15 01:36:10 - Table input.0 - linenr 1050000
+2020/01/15 01:36:10 - Table output.0 - linenr 1050000
+2020/01/15 01:36:11 - Table input.0 - linenr 1100000
+2020/01/15 01:36:11 - Table output.0 - linenr 1100000
+2020/01/15 01:36:12 - Table input.0 - linenr 1150000
+2020/01/15 01:36:12 - Table output.0 - linenr 1150000
+2020/01/15 01:36:13 - Table input.0 - linenr 1200000
+2020/01/15 01:36:13 - Table output.0 - linenr 1200000
+2020/01/15 01:36:15 - Table input.0 - linenr 1250000
+2020/01/15 01:36:15 - Table output.0 - linenr 1250000
+2020/01/15 01:36:17 - Table input.0 - linenr 1300000
+2020/01/15 01:36:17 - Table output.0 - linenr 1300000
+2020/01/15 01:36:19 - Table input.0 - linenr 1350000
+2020/01/15 01:36:19 - Table output.0 - linenr 1350000
+2020/01/15 01:36:21 - Table input.0 - linenr 1400000
+2020/01/15 01:36:21 - Table output.0 - linenr 1400000
+2020/01/15 01:36:22 - Table input.0 - linenr 1450000
+2020/01/15 01:36:22 - Table output.0 - linenr 1450000
+2020/01/15 01:36:24 - Table input.0 - linenr 1500000
+2020/01/15 01:36:24 - Table output.0 - linenr 1500000
+2020/01/15 01:36:26 - Table input.0 - linenr 1550000
+2020/01/15 01:36:26 - Table output.0 - linenr 1550000
+2020/01/15 01:36:28 - Table input.0 - linenr 1600000
+2020/01/15 01:36:28 - Table output.0 - linenr 1600000
+2020/01/15 01:36:30 - Table input.0 - linenr 1650000
+2020/01/15 01:36:30 - Table output.0 - linenr 1650000
+2020/01/15 01:36:32 - Table input.0 - linenr 1700000
+2020/01/15 01:36:32 - Table output.0 - linenr 1700000
+2020/01/15 01:36:33 - Table input.0 - linenr 1750000
+2020/01/15 01:36:33 - Table output.0 - linenr 1750000
+2020/01/15 01:36:35 - Table input.0 - linenr 1800000
+2020/01/15 01:36:35 - Table output.0 - linenr 1800000
+2020/01/15 01:36:37 - Table input.0 - linenr 1850000
+2020/01/15 01:36:37 - Table output.0 - linenr 1850000
+2020/01/15 01:36:39 - Table input.0 - linenr 1900000
+2020/01/15 01:36:39 - Table output.0 - linenr 1900000
+2020/01/15 01:36:41 - Table input.0 - linenr 1950000
+2020/01/15 01:36:41 - Table output.0 - linenr 1950000
+2020/01/15 01:36:42 - Table input.0 - linenr 2000000
+2020/01/15 01:36:42 - Table output.0 - linenr 2000000
+2020/01/15 01:36:44 - Table input.0 - linenr 2050000
+2020/01/15 01:36:44 - Table output.0 - linenr 2050000
+2020/01/15 01:36:45 - Table input.0 - linenr 2100000
+2020/01/15 01:36:45 - Table output.0 - linenr 2100000
+2020/01/15 01:36:46 - Table input.0 - linenr 2150000
+2020/01/15 01:36:46 - Table output.0 - linenr 2150000
+2020/01/15 01:36:47 - Table input.0 - linenr 2200000
+2020/01/15 01:36:47 - Table output.0 - linenr 2200000
+2020/01/15 01:36:49 - Table input.0 - linenr 2250000
+2020/01/15 01:36:49 - Table output.0 - linenr 2250000
+2020/01/15 01:36:50 - Table input.0 - linenr 2300000
+2020/01/15 01:36:50 - Table output.0 - linenr 2300000
+2020/01/15 01:36:52 - Table input.0 - linenr 2350000
+2020/01/15 01:36:52 - Table output.0 - linenr 2350000
+2020/01/15 01:36:53 - Table input.0 - linenr 2400000
+2020/01/15 01:36:53 - Table output.0 - linenr 2400000
+2020/01/15 01:36:54 - Table input.0 - linenr 2450000
+2020/01/15 01:36:55 - Table output.0 - linenr 2450000
+2020/01/15 01:36:56 - Table input.0 - linenr 2500000
+2020/01/15 01:36:56 - Table output.0 - linenr 2500000
+2020/01/15 01:36:57 - Table input.0 - linenr 2550000
+2020/01/15 01:36:57 - Table output.0 - linenr 2550000
+2020/01/15 01:36:59 - Table input.0 - linenr 2600000
+2020/01/15 01:36:59 - Table output.0 - linenr 2600000
+2020/01/15 01:37:00 - Table input.0 - linenr 2650000
+2020/01/15 01:37:00 - Table output.0 - linenr 2650000
+2020/01/15 01:37:00 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:37:00 - Table input.0 - Finished processing (I=2660585, O=0, R=0, W=2660585, U=0, E=0)
+2020/01/15 01:37:01 - Table output.0 - Finished processing (I=0, O=2660585, R=2660585, W=2660585, U=0, E=0)
+2020/01/15 01:37:01 - STG - Starting entry [Success]
+2020/01/15 01:37:01 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:37:01 - STG - Finished job entry [STGPETICIONAMENTO] (result=[true])
+2020/01/15 01:37:01 - STG - Starting entry [STGDOCUMENTO]
+2020/01/15 01:37:01 - STGDOCUMENTO - Using run configuration [Pentaho local]
+2020/01/15 01:37:01 - STGDOCUMENTO - Using legacy execution engine
+2020/01/15 01:37:01 - STGDOCUMENTO - Expedindo in?cio para transforma??o [STGDOCUMENTO]
+2020/01/15 01:37:01 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:39:39 - Table input.0 - linenr 50000
+2020/01/15 01:39:39 - Table output.0 - linenr 50000
+2020/01/15 01:39:41 - Table input.0 - linenr 100000
+2020/01/15 01:39:41 - Table output.0 - linenr 100000
+2020/01/15 01:39:43 - Table input.0 - linenr 150000
+2020/01/15 01:39:43 - Table output.0 - linenr 150000
+2020/01/15 01:39:46 - Table input.0 - linenr 200000
+2020/01/15 01:39:46 - Table output.0 - linenr 200000
+2020/01/15 01:39:47 - Table input.0 - linenr 250000
+2020/01/15 01:39:47 - Table output.0 - linenr 250000
+2020/01/15 01:39:49 - Table input.0 - linenr 300000
+2020/01/15 01:39:49 - Table output.0 - linenr 300000
+2020/01/15 01:39:51 - Table input.0 - linenr 350000
+2020/01/15 01:39:51 - Table output.0 - linenr 350000
+2020/01/15 01:39:53 - Table input.0 - linenr 400000
+2020/01/15 01:39:53 - Table output.0 - linenr 400000
+2020/01/15 01:39:55 - Table input.0 - linenr 450000
+2020/01/15 01:39:55 - Table output.0 - linenr 450000
+2020/01/15 01:39:57 - Table input.0 - linenr 500000
+2020/01/15 01:39:57 - Table output.0 - linenr 500000
+2020/01/15 01:39:59 - Table input.0 - linenr 550000
+2020/01/15 01:39:59 - Table output.0 - linenr 550000
+2020/01/15 01:40:01 - Table input.0 - linenr 600000
+2020/01/15 01:40:01 - Table output.0 - linenr 600000
+2020/01/15 01:40:02 - Table input.0 - linenr 650000
+2020/01/15 01:40:02 - Table output.0 - linenr 650000
+2020/01/15 01:40:04 - Table input.0 - linenr 700000
+2020/01/15 01:40:04 - Table output.0 - linenr 700000
+2020/01/15 01:40:06 - Table input.0 - linenr 750000
+2020/01/15 01:40:06 - Table output.0 - linenr 750000
+2020/01/15 01:40:08 - Table input.0 - linenr 800000
+2020/01/15 01:40:08 - Table output.0 - linenr 800000
+2020/01/15 01:40:11 - Table input.0 - linenr 850000
+2020/01/15 01:40:11 - Table output.0 - linenr 850000
+2020/01/15 01:40:13 - Table input.0 - linenr 900000
+2020/01/15 01:40:13 - Table output.0 - linenr 900000
+2020/01/15 01:40:15 - Table input.0 - linenr 950000
+2020/01/15 01:40:15 - Table output.0 - linenr 950000
+2020/01/15 01:40:16 - Table input.0 - linenr 1000000
+2020/01/15 01:40:16 - Table output.0 - linenr 1000000
+2020/01/15 01:40:18 - Table input.0 - linenr 1050000
+2020/01/15 01:40:18 - Table output.0 - linenr 1050000
+2020/01/15 01:40:20 - Table input.0 - linenr 1100000
+2020/01/15 01:40:20 - Table output.0 - linenr 1100000
+2020/01/15 01:40:22 - Table input.0 - linenr 1150000
+2020/01/15 01:40:22 - Table output.0 - linenr 1150000
+2020/01/15 01:40:24 - Table input.0 - linenr 1200000
+2020/01/15 01:40:24 - Table output.0 - linenr 1200000
+2020/01/15 01:40:26 - Table input.0 - linenr 1250000
+2020/01/15 01:40:26 - Table output.0 - linenr 1250000
+2020/01/15 01:40:28 - Table input.0 - linenr 1300000
+2020/01/15 01:40:28 - Table output.0 - linenr 1300000
+2020/01/15 01:40:30 - Table input.0 - linenr 1350000
+2020/01/15 01:40:30 - Table output.0 - linenr 1350000
+2020/01/15 01:40:32 - Table input.0 - linenr 1400000
+2020/01/15 01:40:32 - Table output.0 - linenr 1400000
+2020/01/15 01:40:34 - Table input.0 - linenr 1450000
+2020/01/15 01:40:34 - Table output.0 - linenr 1450000
+2020/01/15 01:40:36 - Table input.0 - linenr 1500000
+2020/01/15 01:40:36 - Table output.0 - linenr 1500000
+2020/01/15 01:40:38 - Table input.0 - linenr 1550000
+2020/01/15 01:40:38 - Table output.0 - linenr 1550000
+2020/01/15 01:40:40 - Table input.0 - linenr 1600000
+2020/01/15 01:40:40 - Table output.0 - linenr 1600000
+2020/01/15 01:40:41 - Table input.0 - linenr 1650000
+2020/01/15 01:40:41 - Table output.0 - linenr 1650000
+2020/01/15 01:40:43 - Table input.0 - linenr 1700000
+2020/01/15 01:40:43 - Table output.0 - linenr 1700000
+2020/01/15 01:40:45 - Table input.0 - linenr 1750000
+2020/01/15 01:40:45 - Table output.0 - linenr 1750000
+2020/01/15 01:40:47 - Table input.0 - linenr 1800000
+2020/01/15 01:40:47 - Table output.0 - linenr 1800000
+2020/01/15 01:40:49 - Table input.0 - linenr 1850000
+2020/01/15 01:40:49 - Table output.0 - linenr 1850000
+2020/01/15 01:40:51 - Table input.0 - linenr 1900000
+2020/01/15 01:40:51 - Table output.0 - linenr 1900000
+2020/01/15 01:40:53 - Table input.0 - linenr 1950000
+2020/01/15 01:40:53 - Table output.0 - linenr 1950000
+2020/01/15 01:40:55 - Table input.0 - linenr 2000000
+2020/01/15 01:40:55 - Table output.0 - linenr 2000000
+2020/01/15 01:40:56 - Table input.0 - linenr 2050000
+2020/01/15 01:40:56 - Table output.0 - linenr 2050000
+2020/01/15 01:40:58 - Table input.0 - linenr 2100000
+2020/01/15 01:40:58 - Table output.0 - linenr 2100000
+2020/01/15 01:41:00 - Table input.0 - linenr 2150000
+2020/01/15 01:41:00 - Table output.0 - linenr 2150000
+2020/01/15 01:41:02 - Table input.0 - linenr 2200000
+2020/01/15 01:41:02 - Table output.0 - linenr 2200000
+2020/01/15 01:41:04 - Table input.0 - linenr 2250000
+2020/01/15 01:41:04 - Table output.0 - linenr 2250000
+2020/01/15 01:41:06 - Table input.0 - linenr 2300000
+2020/01/15 01:41:06 - Table output.0 - linenr 2300000
+2020/01/15 01:41:08 - Table input.0 - linenr 2350000
+2020/01/15 01:41:08 - Table output.0 - linenr 2350000
+2020/01/15 01:41:10 - Table input.0 - linenr 2400000
+2020/01/15 01:41:10 - Table output.0 - linenr 2400000
+2020/01/15 01:41:12 - Table input.0 - linenr 2450000
+2020/01/15 01:41:12 - Table output.0 - linenr 2450000
+2020/01/15 01:41:14 - Table input.0 - linenr 2500000
+2020/01/15 01:41:14 - Table output.0 - linenr 2500000
+2020/01/15 01:41:16 - Table input.0 - linenr 2550000
+2020/01/15 01:41:16 - Table output.0 - linenr 2550000
+2020/01/15 01:41:18 - Table input.0 - linenr 2600000
+2020/01/15 01:41:18 - Table output.0 - linenr 2600000
+2020/01/15 01:41:20 - Table input.0 - linenr 2650000
+2020/01/15 01:41:20 - Table output.0 - linenr 2650000
+2020/01/15 01:41:22 - Table input.0 - linenr 2700000
+2020/01/15 01:41:22 - Table output.0 - linenr 2700000
+2020/01/15 01:41:23 - Table input.0 - linenr 2750000
+2020/01/15 01:41:23 - Table output.0 - linenr 2750000
+2020/01/15 01:41:25 - Table input.0 - linenr 2800000
+2020/01/15 01:41:25 - Table output.0 - linenr 2800000
+2020/01/15 01:41:27 - Table input.0 - linenr 2850000
+2020/01/15 01:41:27 - Table output.0 - linenr 2850000
+2020/01/15 01:41:29 - Table input.0 - linenr 2900000
+2020/01/15 01:41:29 - Table output.0 - linenr 2900000
+2020/01/15 01:41:31 - Table input.0 - linenr 2950000
+2020/01/15 01:41:31 - Table output.0 - linenr 2950000
+2020/01/15 01:41:33 - Table input.0 - linenr 3000000
+2020/01/15 01:41:33 - Table output.0 - linenr 3000000
+2020/01/15 01:41:35 - Table input.0 - linenr 3050000
+2020/01/15 01:41:35 - Table output.0 - linenr 3050000
+2020/01/15 01:41:37 - Table input.0 - linenr 3100000
+2020/01/15 01:41:37 - Table output.0 - linenr 3100000
+2020/01/15 01:41:39 - Table input.0 - linenr 3150000
+2020/01/15 01:41:39 - Table output.0 - linenr 3150000
+2020/01/15 01:41:41 - Table input.0 - linenr 3200000
+2020/01/15 01:41:41 - Table output.0 - linenr 3200000
+2020/01/15 01:41:43 - Table input.0 - linenr 3250000
+2020/01/15 01:41:43 - Table output.0 - linenr 3250000
+2020/01/15 01:41:45 - Table input.0 - linenr 3300000
+2020/01/15 01:41:45 - Table output.0 - linenr 3300000
+2020/01/15 01:41:47 - Table input.0 - linenr 3350000
+2020/01/15 01:41:47 - Table output.0 - linenr 3350000
+2020/01/15 01:41:49 - Table input.0 - linenr 3400000
+2020/01/15 01:41:49 - Table output.0 - linenr 3400000
+2020/01/15 01:41:51 - Table input.0 - linenr 3450000
+2020/01/15 01:41:52 - Table output.0 - linenr 3450000
+2020/01/15 01:41:54 - Table input.0 - linenr 3500000
+2020/01/15 01:41:54 - Table output.0 - linenr 3500000
+2020/01/15 01:41:56 - Table input.0 - linenr 3550000
+2020/01/15 01:41:56 - Table output.0 - linenr 3550000
+2020/01/15 01:41:58 - Table input.0 - linenr 3600000
+2020/01/15 01:41:58 - Table output.0 - linenr 3600000
+2020/01/15 01:42:00 - Table input.0 - linenr 3650000
+2020/01/15 01:42:00 - Table output.0 - linenr 3650000
+2020/01/15 01:42:02 - Table input.0 - linenr 3700000
+2020/01/15 01:42:02 - Table output.0 - linenr 3700000
+2020/01/15 01:42:04 - Table input.0 - linenr 3750000
+2020/01/15 01:42:04 - Table output.0 - linenr 3750000
+2020/01/15 01:42:04 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:42:04 - Table input.0 - Finished processing (I=3750720, O=0, R=0, W=3750720, U=0, E=0)
+2020/01/15 01:42:04 - Table output.0 - Finished processing (I=0, O=3750720, R=3750720, W=3750720, U=0, E=0)
+2020/01/15 01:42:04 - STG - Starting entry [Success]
+2020/01/15 01:42:04 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:42:04 - STG - Finished job entry [STGDOCUMENTO] (result=[true])
+2020/01/15 01:42:04 - STG - Starting entry [STGTIPOMVPROCESSO]
+2020/01/15 01:42:04 - STGTIPOMVPROCESSO - Using run configuration [Pentaho local]
+2020/01/15 01:42:04 - STGTIPOMVPROCESSO - Using legacy execution engine
+2020/01/15 01:42:04 - STGTIPOMVPROCESSO - Expedindo in?cio para transforma??o [STGTIPOMVPROCESSO]
+2020/01/15 01:42:04 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:42:04 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:42:04 - Table input.0 - Finished processing (I=687, O=0, R=0, W=687, U=0, E=0)
+2020/01/15 01:42:04 - Table output.0 - Finished processing (I=0, O=687, R=687, W=687, U=0, E=0)
+2020/01/15 01:42:04 - STG - Starting entry [Success]
+2020/01/15 01:42:04 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:42:04 - STG - Finished job entry [STGTIPOMVPROCESSO] (result=[true])
+2020/01/15 01:42:04 - STG - Starting entry [STGAUDITORIA]
+2020/01/15 01:42:04 - STGAUDITORIA - Using run configuration [Pentaho local]
+2020/01/15 01:42:04 - STGAUDITORIA - Using legacy execution engine
+2020/01/15 01:42:04 - STGAUDITORIA - Expedindo in?cio para transforma??o [STGAUDITORIA]
+2020/01/15 01:42:04 - Table output.0 - Connected to database [INSIGHT] (commit=1000)
+2020/01/15 01:42:10 - Table input.0 - linenr 50000
+2020/01/15 01:42:10 - Table output.0 - linenr 50000
+2020/01/15 01:42:15 - Table input.0 - linenr 100000
+2020/01/15 01:42:15 - Table output.0 - linenr 100000
+2020/01/15 01:42:16 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:42:16 - Table input.0 - Finished processing (I=116225, O=0, R=0, W=116225, U=0, E=0)
+2020/01/15 01:42:16 - Table output.0 - Finished processing (I=0, O=116225, R=116225, W=116225, U=0, E=0)
+2020/01/15 01:42:16 - STG - Starting entry [Success]
+2020/01/15 01:42:16 - STG - Finished job entry [Success] (result=[true])
+2020/01/15 01:42:16 - STG - Finished job entry [STGAUDITORIA] (result=[true])
+2020/01/15 01:42:16 - JOB_GERAL - Starting entry [Carrega Dimensões]
+2020/01/15 01:42:16 - Carrega Dimensões - Using run configuration [Pentaho local]
+2020/01/15 01:42:16 - Carrega Dimensões - Using legacy execution engine
+2020/01/15 01:42:16 - MERGE - Expedindo in?cio para transforma??o [MERGE]
+2020/01/15 01:45:21 - MERGE dTipoProcAdm.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dim.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MEGE dim.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dTipoAtendimento.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dEspecialidade.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dAreaAtuacao.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dAtivNaoProced.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dFonteOrigem.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dSituacaoProcesso.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dTipoProcesso.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dim.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dAtivNaoProced.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dAreaAtuacao.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dEspecialidade.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dTipoProcAdm.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dFonteOrigem.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MEGE dim.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dPrograma.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dTipoAtendimento.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dSituacaoProcesso.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dClassificacao.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dUsuario.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dEntrancia.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dSetor.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dPendenciaPrazo.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dPrograma.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dEntrancia.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dTipoProcesso.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dUsuario.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dMunicipio.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dTipoMVProcesso.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dTipoExtraJudici.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dPendenciaPrazo.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE INTO "dClasse" .0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dLocal.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dClassificacao.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dAssunto.0 - Finished reading query, closing connection.
+2020/01/15 01:45:21 - MERGE dMunicipio.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dTipoMVProcesso.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dSetor.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE INTO "dClasse" .0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dLocal.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dAssunto.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - MERGE dTipoExtraJudici.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:45:21 - JOB_GERAL - Starting entry [Carrega fMovimentacao]
+2020/01/15 01:45:21 - Carrega fMovimentacao - Using run configuration [Pentaho local]
+2020/01/15 01:45:21 - Carrega fMovimentacao - Using legacy execution engine
+2020/01/15 01:45:21 - pCargafMovimentacao - Expedindo in?cio para transforma??o [pCargafMovimentacao]
+2020/01/15 01:46:59 - Execute "pCargafMovimentacao".0 - Finished reading query, closing connection.
+2020/01/15 01:46:59 - Execute "pCargafMovimentacao".0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:46:59 - JOB_GERAL - Starting entry [Carrega fact]
+2020/01/15 01:46:59 - Carrega fact - Using run configuration [Pentaho local]
+2020/01/15 01:46:59 - Carrega fact - Using legacy execution engine
+2020/01/15 01:46:59 - procedure - Expedindo in?cio para transforma??o [procedure]
+2020/01/15 01:47:59 - Execute "procedure".0 - Finished reading query, closing connection.
+2020/01/15 01:47:59 - Execute "procedure".0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 01:47:59 - JOB_GERAL - Starting entry [Recalcula Medidas fact]
+2020/01/15 01:47:59 - Recalcula Medidas fact - Using run configuration [Pentaho local]
+2020/01/15 01:47:59 - Recalcula Medidas fact - Using legacy execution engine
+2020/01/15 01:47:59 - pUpdatefInfoProcMedidas - Expedindo in?cio para transforma??o [pUpdatefInfoProcMedidas]
+2020/01/15 02:28:24 - Execute "pUpdatefInfoProcMedidas".0 - Finished reading query, closing connection.
+2020/01/15 02:28:24 - Execute "pUpdatefInfoProcMedidas".0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 02:28:24 - JOB_GERAL - Starting entry [Recalcula Campos Dimensões]
+2020/01/15 02:28:25 - Recalcula Campos Dimensões - Using run configuration [Pentaho local]
+2020/01/15 02:28:25 - UPDATE_DIMENSOES - Starting entry [Recalcula campo "dim".nmcomarcacalculado]
+2020/01/15 02:28:25 - Recalcula campo "dim".nmcomarcacalculado - Using run configuration [Pentaho local]
+2020/01/15 02:28:25 - Recalcula campo "dim".nmcomarcacalculado - Using legacy execution engine
+2020/01/15 02:28:25 - pUpdatedimNomeCalculado - Expedindo in?cio para transforma??o [pUpdatedimNomeCalculado]
+2020/01/15 02:28:25 - Execute "pUpdatedimNomeCalculado".0 - Finished reading query, closing connection.
+2020/01/15 02:28:25 - Execute "pUpdatedimNomeCalculado".0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 02:28:25 - UPDATE_DIMENSOES - Starting entry [Success]
+2020/01/15 02:28:25 - UPDATE_DIMENSOES - Finished job entry [Success] (result=[true])
+2020/01/15 02:28:25 - UPDATE_DIMENSOES - Finished job entry [Recalcula campo "dim".nmcomarcacalculado] (result=[true])
+2020/01/15 02:28:25 - UPDATE_DIMENSOES - Starting entry [Recalcula campo "dim".deprocessojudextrajud]
+2020/01/15 02:28:25 - Recalcula campo "dim".deprocessojudextrajud - Using run configuration [Pentaho local]
+2020/01/15 02:28:25 - Recalcula campo "dim".deprocessojudextrajud - Using legacy execution engine
+2020/01/15 02:28:25 - pUpdatedimJudExtraJud - Expedindo in?cio para transforma??o [pUpdatedimJudExtraJud]
+2020/01/15 02:29:03 - Execute "pUpdatedimJudExtraJud".0 - Finished reading query, closing connection.
+2020/01/15 02:29:03 - Execute "pUpdatedimJudExtraJud".0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 02:29:03 - UPDATE_DIMENSOES - Starting entry [Success]
+2020/01/15 02:29:03 - UPDATE_DIMENSOES - Finished job entry [Success] (result=[true])
+2020/01/15 02:29:03 - UPDATE_DIMENSOES - Finished job entry [Recalcula campo "dim".deprocessojudextrajud] (result=[true])
+2020/01/15 02:29:03 - UPDATE_DIMENSOES - Starting entry [Recalcula campo "dUsuario".dtusuultimoacesso]
+2020/01/15 02:29:03 - Recalcula campo "dUsuario".dtusuultimoacesso - Using run configuration [Pentaho local]
+2020/01/15 02:29:03 - Recalcula campo "dUsuario".dtusuultimoacesso - Using legacy execution engine
+2020/01/15 02:29:03 - user - Expedindo in?cio para transforma??o [user]
+2020/01/15 02:29:45 - Execute "user".0 - Finished reading query, closing connection.
+2020/01/15 02:29:45 - Execute "user".0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 02:29:45 - UPDATE_DIMENSOES - Starting entry [Success]
+2020/01/15 02:29:45 - UPDATE_DIMENSOES - Finished job entry [Success] (result=[true])
+2020/01/15 02:29:45 - UPDATE_DIMENSOES - Finished job entry [Recalcula campo "dUsuario".dtusuultimoacesso] (result=[true])
+2020/01/15 02:29:45 - JOB_GERAL - Starting entry [Grava Log de Volumetria]
+2020/01/15 02:29:45 - Grava Log de Volumetria - Using run configuration [Pentaho local]
+2020/01/15 02:29:45 - Grava Log de Volumetria - Using legacy execution engine
+2020/01/15 02:29:45 - pInsertLogVolumetria - Expedindo in?cio para transforma??o [pInsertLogVolumetria]
+2020/01/15 02:32:17 - Execute "pInsertLogVolumetria".0 - Finished reading query, closing connection.
+2020/01/15 02:32:17 - Execute "pInsertLogVolumetria".0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 02:32:17 - JOB_GERAL - Starting entry [Success]
+2020/01/15 02:32:17 - JOB_GERAL - Finished job entry [Success] (result=[true])
+2020/01/15 02:32:17 - JOB_GERAL - Finished job entry [Grava Log de Volumetria] (result=[true])
+2020/01/15 02:32:17 - JOB_GERAL - Finished job entry [Recalcula Campos Dimensões] (result=[true])
+2020/01/15 02:32:17 - JOB_GERAL - Finished job entry [Recalcula Medidas fact] (result=[true])
+2020/01/15 02:32:17 - JOB_GERAL - Finished job entry [Carrega fact] (result=[true])
+2020/01/15 02:32:17 - JOB_GERAL - Finished job entry [Carrega fMovimentacao] (result=[true])
+2020/01/15 02:32:17 - JOB_GERAL - Finished job entry [Carrega Dimensões] (result=[true])
+2020/01/15 02:32:17 - JOB_GERAL - Finished job entry [Executa Carga STG] (result=[true])
+2020/01/15 02:32:17 - JOB_GERAL - Job execution finished
+2020/01/15 02:32:17 - Kitchen - Finished!
+2020/01/15 02:32:17 - Kitchen - Start=2020/01/15 01:30:08.198, Stop=2020/01/15 02:32:17.220
+2020/01/15 02:32:17 - Kitchen - Processing ended after 1 hours, 2 minutes and 9 seconds (3729 seconds total).

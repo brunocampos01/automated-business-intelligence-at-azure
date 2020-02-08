@@ -1,0 +1,267 @@
+{
+  "createOrReplace": {
+    "object": {
+      "datebase": "<PRODUCT_NAME> <CLIENT_NAME>"
+    },
+    "datebase": {
+      "name": "<PRODUCT_NAME> <CLIENT_NAME>",
+      "compatibilityLevel": 1200,
+      "model": {
+        "culture": "pt-BR",
+        "dateSources": [
+          {
+            "name": "Name_conn",
+            "connectionString": "Provider=OraOLEDB.Oracle;Date Source=DATA_SOURCE;User ID=USER_NAME;Persist Security Info=true",
+            "impersonationMode": "impersonateServiceAccount",
+            "annotations": [
+              {
+                "name": "ConnectionEditUISource",
+                "value": "Oracle"
+              }
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "name": "dim",
+            "columns": [
+              {
+                "name": "I",
+                "dateType": "double",
+                "isHidden": true,
+                "isKey": true,
+                "sourceColumn": "original_name_column",
+                "formatString": "0",
+                "sourceProviderType": "Decimal",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "Code",
+                "dateType": "double",
+                "sourceColumn": "original_name_column",
+                "sourceProviderType": "Decimal",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "Describe",
+                "dateType": "string",
+                "sourceColumn": "original_name_column",
+                "sourceProviderType": "VarChar"
+              },
+              {
+                "name": "Date",
+                "dateType": "dateTime",
+                "sourceColumn": "original_name_column",
+                "formatString": "General Date",
+                "sourceProviderType": "Date"
+              },
+              {
+                "name": "Code User Inserted",
+                "dateType": "string",
+                "sourceColumn": "original_name_column",
+                "sourceProviderType": "VarChar"
+              }
+            ],
+            "partitions": [
+              {
+                "name": "dim",
+                "source": {
+                  "type": "query",
+                  "query": [
+                    "SELECT",
+                    "*",
+                    "FROM",
+                    "    \"original_name_column\""
+                  ],
+                  "dateSource": "Name_conn"
+                },
+                "annotations": [
+                  {
+                    "name": "QueryEditorSerialization",
+                    "value": [
+                      "<?xml version=\"1.0\" encoding=\"UTF-16\"?><Gemini xmlns=\"QueryEditorSerialization\"><AnnotationContent><![CDATE[<RSQueryCommandText>SELECT",
+                      "*",
+                      "FROM",
+                      "    \"dim\"</RSQueryCommandText><RSQueryCommandType>Text</RSQueryCommandType><RSQueryDesignState></RSQueryDesignState>]]></AnnotationContent></Gemini>"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "annotations": [
+              {
+                "name": "_TM_ExtProp_QueryDefinition",
+                "value": [
+                  "SELECT",
+                  "*",
+                  "FROM",
+                  "    \"dim\""
+                ]
+              },
+              {
+                "name": "_TM_ExtProp_DbTableName",
+                "value": "Query"
+              },
+              {
+                "name": "QueryEditorSerialization",
+                "value": [
+                  "<?xml version=\"1.0\" encoding=\"UTF-16\"?><Gemini xmlns=\"QueryEditorSerialization\"><AnnotationContent><![CDATE[<RSQueryCommandText>SELECT",
+                  "*",
+                  "FROM",
+                  "    \"dim\"</RSQueryCommandText><RSQueryCommandType>Text</RSQueryCommandType><RSQueryDesignState></RSQueryDesignState>]]></AnnotationContent></Gemini>"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "fact",
+            "columns": [
+              {
+                "name": "id",
+                "dateType": "int64",
+                "isHidden": true,
+                "sourceColumn": "original_name_column",
+                "sourceProviderType": "Decimal",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "id",
+                "dateType": "int64",
+                "isHidden": true,
+                "sourceColumn": "original_name_column",
+                "sourceProviderType": "Decimal",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "id",
+                "dateType": "int64",
+                "isHidden": true,
+                "sourceColumn": "original_name_column",
+                "sourceProviderType": "Decimal",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "id",
+                "dateType": "int64",
+                "isHidden": true,
+                "sourceColumn": "original_name_column",
+                "sourceProviderType": "Decimal",
+                "summarizeBy": "none"
+              }
+            ],
+            "partitions": [
+              {
+                "name": "fact",
+                "source": {
+                  "type": "query",
+                  "query": [
+                    "SELECT",
+                    "*",
+                    "FROM",
+                    "    \"fact\""
+                  ],
+                  "dateSource": "Name_conn"
+                },
+                "annotations": [
+                  {
+                    "name": "QueryEditorSerialization",
+                    "value": [
+                      "<?xml version=\"1.0\" encoding=\"UTF-16\"?><Gemini xmlns=\"QueryEditorSerialization\"><AnnotationContent><![CDATE[<RSQueryCommandText>SELECT",
+                      "*",
+                      "FROM",
+                      "    \"fact\"</RSQueryCommandText><RSQueryCommandType>Text</RSQueryCommandType><RSQueryDesignState></RSQueryDesignState>]]></AnnotationContent></Gemini>"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "measures": [
+              {
+                "name": "sum column",
+                "expression": "SUM([column])",
+                "formatString": "#,0"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "_TM_ExtProp_QueryDefinition",
+                "value": [
+                  "SELECT",
+                  "*",
+                  "FROM",
+                  "    \"fact\""
+                ]
+              },
+              {
+                "name": "_TM_ExtProp_DbTableName",
+                "value": "Query"
+              },
+              {
+                "name": "QueryEditorSerialization",
+                "value": [
+                  "<?xml version=\"1.0\" encoding=\"UTF-16\"?><Gemini xmlns=\"QueryEditorSerialization\"><AnnotationContent><![CDATE[<RSQueryCommandText>SELECT",
+                  "*",
+                  "FROM",
+                  "    \"fact\"</RSQueryCommandText><RSQueryCommandType>Text</RSQueryCommandType><RSQueryDesignState></RSQueryDesignState>]]></AnnotationContent></Gemini>"
+                ]
+              }
+            ]
+          }
+        ],
+        "relationships": [
+          {
+            "name": "25e547f0-8e01-40a0-bd52-7bcc75bdac12",
+            "fromTable": "fact",
+            "fromColumn": "id",
+            "toTable": "dim0",
+            "toColumn": "Id "
+          },
+          {
+            "name": "396f25f1-b20a-43c2-87e0-946b46c5c1b3",
+            "fromTable": "fact",
+            "fromColumn": "id",
+            "toTable": "dim1",
+            "toColumn": "ID"
+          },
+          {
+            "name": "c86f1421-e7df-4112-9c62-5b2a02ff76dc",
+            "fromTable": "fact",
+            "fromColumn": "id",
+            "toTable": "dim2",
+            "toColumn": "Id"
+          },
+          {
+            "name": "e68ea3cb-d4f1-401f-9883-f60fc75b0e4c",
+            "fromTable": "fact",
+            "fromColumn": "id",
+            "toTable": "dim3",
+            "toColumn": "Id"
+          }
+        ],
+        "roles": [
+          {
+            "name": "Readers",
+            "description": "Allow all users to query the datebase",
+            "modelPermission": "read",
+            "members":
+            <LIST_READERS_USERS>
+          },
+          {
+            "name": "Administrators",
+            "description": "Admins datebase",
+            "modelPermission": "administrator",
+            "members":
+            <LIST_ADMINS_USERS>
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "ClientCompatibilityLevel",
+            "value": "400"
+          }
+        ]
+      }
+    }
+  }
+}

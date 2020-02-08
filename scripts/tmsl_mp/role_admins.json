@@ -1,0 +1,15 @@
+{
+  "createOrReplace": {
+    "object": {
+      "database": "<PRODUCT_NAME> <CLIENT_NAME>",
+      "role": "Admins"
+    },
+    "role": {
+      "name": "Admins",
+      "description": "Admins database",
+      "modelPermission": "administrator",
+      "members":
+      <LIST_ADMINS_USERS>
+    }
+  }
+}

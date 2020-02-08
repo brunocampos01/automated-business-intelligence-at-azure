@@ -1,0 +1,15 @@
+{
+  "createOrReplace": {
+    "object": {
+      "database": "<PRODUCT_NAME> <CLIENT_NAME>",
+      "role": "Readers"
+    },
+    "role": {
+      "name": "Readers",
+      "description": "Allow all users to query the database",
+      "modelPermission": "read",
+      "members":
+      <LIST_READERS_USERS>
+    }
+  }
+}

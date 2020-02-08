@@ -1,0 +1,68 @@
+DEBUG: Using PENTAHO_JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=E:\Kettle\java\jre-windows-x64
+DEBUG: _PENTAHO_JAVA=E:\Kettle\java\jre-windows-x64\bin\java.exe
+
+E:\Kettle>"E:\Kettle\java\jre-windows-x64\bin\java.exe"  "-Xms1024m" "-Xmx2048m" "-XX:MaxPermSize=256m" "-Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\launcher.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen -initialDir "C:\Windows\system32"\ /file:"E:\sajdatabase_names\ETL\Jobs\JOB_GERAL.kjb" /level:Basic
+01:30:03,021 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+01:30:07,176 INFO  [KarafInstance]
+*******************************************************************************
+*** Karaf Instance Number: 1 at E:\Kettle\.\system\karaf\caches\kitchen\dat ***
+***   a-1                                                                   ***
+*** FastBin Provider Port:52901                                             ***
+*** Karaf Port:8802                                                         ***
+*** OSGI Service Port:9051                                                  ***
+*******************************************************************************
+2020/01/15 01:30:08 - Kitchen - Logging is at level : Log básico
+2020/01/15 01:30:08 - Kitchen - Start of run.
+2020/01/15 01:30:13 - JOB_GERAL - Início da execução do job
+2020/01/15 01:30:13 - JOB_GERAL - Starting entry [Executa Carga stage]
+2020/01/15 01:30:13 - Executa Carga stage - Using run configuration [Pentaho local]
+2020/01/15 01:30:13 - stage - Starting entry [stage]
+2020/01/15 01:30:14 - Table output.0 - Connected to database [database_name] (commit=1000)
+2020/01/15 01:30:14 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:30:14 - Table input.0 - Finished processing (I=23, O=0, R=0, W=23, U=0, E=0)
+2020/01/15 01:30:14 - Table output.0 - Finished processing (I=0, O=23, R=23, W=23, U=0, E=0)
+2020/01/15 01:30:14 - stage - Starting entry [Success]
+2020/01/15 01:30:14 - stage - Finished job entry [Success] (result=[true])
+2020/01/15 01:30:14 - stage - Finished job entry [stageAREAATUACAO] (result=[true])
+2020/01/15 01:30:14 - stage - Starting entry [stageASSUNTO]
+2020/01/15 01:30:14 - stageASSUNTO - Using run configuration [Pentaho local]
+2020/01/15 01:30:14 - stageASSUNTO - Using legacy execution engine
+2020/01/15 01:30:14 - Carte - Installing timer to purge stale objects after 1440 minutes.
+2020/01/15 01:30:14 - stageASSUNTO - Expedindo in?cio para transforma??o [stageASSUNTO]
+2020/01/15 01:30:14 - Table output.0 - Connected to database [database_name] (commit=1000)
+2020/01/15 01:30:14 - Table input.0 - Finished reading query, closing connection.
+2020/01/15 01:30:14 - Table input.0 - Finished processing (I=4040, O=0, R=0, W=4040, U=0, E=0)
+2020/01/15 01:30:14 - Table output.0 - Finished processing (I=0, O=4040, R=4040, W=4040, U=0, E=0)
+2020/01/15 01:30:14 - stage - Starting entry [Success]
+2020/01/15 01:30:14 - stage - Finished job entry [Success] (result=[true])
+2020/01/15 01:30:14 - stage - Finished job entry [stageASSUNTO] (result=[true])
+2020/01/15 02:29:03 - UPDATE_DIMENSOES - Starting entry [Success]
+2020/01/15 02:29:03 - UPDATE_DIMENSOES - Finished job entry [Success] (result=[true])
+2020/01/15 02:29:03 - UPDATE_DIMENSOES - Finished job entry [Recalcula campo "dim".] (result=[true])
+2020/01/15 02:29:03 - UPDATE_DIMENSOES - Starting entry [Recalcula campo "dUsuario".]
+2020/01/15 02:29:03 - Recalcula campo "dUsuario". - Using run configuration [Pentaho local]
+2020/01/15 02:29:03 - Recalcula campo "dUsuario". - Using legacy execution engine
+2020/01/15 02:29:03 - user - Expedindo in?cio para transforma??o [user]
+2020/01/15 02:29:45 - Execute "user".0 - Finished reading query, closing connection.
+2020/01/15 02:29:45 - Execute "user".0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 02:29:45 - UPDATE_DIMENSOES - Starting entry [Success]
+2020/01/15 02:29:45 - UPDATE_DIMENSOES - Finished job entry [Success] (result=[true])
+2020/01/15 02:29:45 - UPDATE_DIMENSOES - Finished job entry [Recalcula campo "dUsuario".] (result=[true])
+2020/01/15 02:29:45 - JOB_GERAL - Starting entry [Grava Log de Volumetria]
+2020/01/15 02:29:45 - Grava Log de Volumetria - Using run configuration [Pentaho local]
+2020/01/15 02:29:45 - Grava Log de Volumetria - Using legacy execution engine
+2020/01/15 02:32:17 - Execute "pInsertLogVolumetria".0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2020/01/15 02:32:17 - JOB_GERAL - Starting entry [Success]
+2020/01/15 02:32:17 - JOB_GERAL - Finished job entry [Success] (result=[true])
+2020/01/15 02:32:17 - JOB_GERAL - Finished job entry [Grava Log de Volumetria] (result=[true])
+2020/01/15 02:32:17 - JOB_GERAL - Finished job entry [Recalcula Campos dim] (result=[true])
+2020/01/15 02:32:17 - JOB_GERAL - Finished job entry [Recalcula Medidas fact] (result=[true])
+2020/01/15 02:32:17 - JOB_GERAL - Finished job entry [Carrega fact] (result=[true])
+2020/01/15 02:32:17 - JOB_GERAL - Finished job entry [Carrega dim] (result=[true])
+2020/01/15 02:32:17 - JOB_GERAL - Finished job entry [Executa Carga stage] (result=[true])
+2020/01/15 02:32:17 - JOB_GERAL - Job execution finished
+2020/01/15 02:32:17 - Kitchen - Finished!
+2020/01/15 02:32:17 - Kitchen - Start=2029/01/15 01:30:08.198, 
+Stop=2020/01/15 02:32:17.220
+2020/01/15 02:32:17 - Kitchen - Processing ended after 1 hours, 2 minutes and 9 seconds (3729 seconds total).

@@ -1,0 +1,5 @@
+AzureDiagnostics
+| where ResourceGroup == "<product-name>-<client-name>"
+| where ResourceProvider == "MICROSOFT.AUTOMATION"
+| where ResultType in ("Failed", "Completed")
+| sort by TimeGenerated desc

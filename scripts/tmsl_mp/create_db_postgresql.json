@@ -1,0 +1,634 @@
+{
+  "createOrReplace": {
+    "object": {
+      "database": "<PRODUCT_NAME> <CLIENT_NAME>"
+    },
+    "database": {
+      "name": "<PRODUCT_NAME> <CLIENT_NAME>",
+      "compatibilityLevel": 1400,
+      "model": {
+        "name": "<PRODUCT_NAME> <CLIENT_NAME>",
+        "culture": "pt-BR",
+        "dataSources": [
+          {
+            "type": "structured",
+            "name": "Odbc/dsn=PostgreSQL35W",
+            "connectionDetails": {
+              "protocol": "odbc",
+              "address": {
+                "options": {
+                  "dsn": "PostgreSQL35W35W"
+                }
+              },
+              "authentication": null,
+              "query": null
+            },
+            "options": {
+              "hierarchicalNavigation": true
+            },
+            "credential": {
+              "AuthenticationKind": "UsernamePassword",
+              "kind": "Odbc",
+              "path": "dsn=PostgreSQL35W",
+              "Username": ""
+            }
+          }
+        ],
+        "tables": [
+          {
+            "name": "dim1",
+            "columns": [
+              {
+                "name": "id column",
+                "dataType": "int64",
+                "isHidden": true,
+                "isKey": true,
+                "sourceColumn": "original_name_column",
+                "formatString": "0"
+              },
+              {
+                "name": "code column",
+                "dataType": "double",
+                "sourceColumn": "original_name_column",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "describe column",
+                "dataType": "string",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "insert date",
+                "dataType": "dateTime",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "code user include",
+                "dataType": "string",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "load date",
+                "dataType": "dateTime",
+                "isHidden": true,
+                "sourceColumn": "original_name_column"
+              }
+            ],
+            "partitions": [
+              {
+                "name": "Partition",
+                "dataView": "full",
+                "source": {
+                  "type": "m",
+                  "expression": [
+                    "let",
+                    "    Source = #\"Odbc/dsn=PostgreSQL35W\",",
+                    "    user_databese_Database = Source{[Name=\"user_databese\",Kind=\"Database\"]}[Data],",
+                    "    database_Schema = user_databese_Database{[Name=\"database\",Kind=\"Schema\"]}[Data],",
+                    "    dim1_Table = database_Schema{[Name=\"dim1\",Kind=\"Table\"]}[Data]",
+                    "in",
+                    "    dim1_Table"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "dim2",
+            "columns": [
+              {
+                "name": "id column",
+                "dataType": "int64",
+                "isHidden": true,
+                "isKey": true,
+                "sourceColumn": "original_name_column",
+                "formatString": "0"
+              },
+              {
+                "name": "code column",
+                "dataType": "double",
+                "sourceColumn": "original_name_column",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "describe column",
+                "dataType": "string",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "insert date",
+                "dataType": "dateTime",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "code user include",
+                "dataType": "string",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "load date",
+                "dataType": "dateTime",
+                "isHidden": true,
+                "sourceColumn": "original_name_column"
+              }
+            ],
+            "partitions": [
+              {
+                "name": "Partition",
+                "dataView": "full",
+                "source": {
+                  "type": "m",
+                  "expression": [
+                    "let",
+                    "    Source = #\"Odbc/dsn=PostgreSQL35W\",",
+                    "    user_databese_Database = Source{[Name=\"user_databese\",Kind=\"Database\"]}[Data],",
+                    "    database_Schema = user_databese_Database{[Name=\"database\",Kind=\"Schema\"]}[Data],",
+                    "    dim1_Table = database_Schema{[Name=\"dim1\",Kind=\"Table\"]}[Data]",
+                    "in",
+                    "    dim1_Table"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "dim3",
+            "columns": [
+              {
+                "name": "id column",
+                "dataType": "int64",
+                "isHidden": true,
+                "isKey": true,
+                "sourceColumn": "original_name_column",
+                "formatString": "0"
+              },
+              {
+                "name": "code column",
+                "dataType": "double",
+                "sourceColumn": "original_name_column",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "describe column",
+                "dataType": "string",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "insert date",
+                "dataType": "dateTime",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "code user include",
+                "dataType": "string",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "load date",
+                "dataType": "dateTime",
+                "isHidden": true,
+                "sourceColumn": "original_name_column"
+              }
+            ],
+            "partitions": [
+              {
+                "name": "Partition",
+                "dataView": "full",
+                "source": {
+                  "type": "m",
+                  "expression": [
+                    "let",
+                    "    Source = #\"Odbc/dsn=PostgreSQL35W\",",
+                    "    user_databese_Database = Source{[Name=\"user_databese\",Kind=\"Database\"]}[Data],",
+                    "    database_Schema = user_databese_Database{[Name=\"database\",Kind=\"Schema\"]}[Data],",
+                    "    dim1_Table = database_Schema{[Name=\"dim1\",Kind=\"Table\"]}[Data]",
+                    "in",
+                    "    dim1_Table"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "dim4",
+            "columns": [
+              {
+                "name": "id column",
+                "dataType": "int64",
+                "isHidden": true,
+                "isKey": true,
+                "sourceColumn": "original_name_column",
+                "formatString": "0"
+              },
+              {
+                "name": "code column",
+                "dataType": "double",
+                "sourceColumn": "original_name_column",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "describe column",
+                "dataType": "string",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "insert date",
+                "dataType": "dateTime",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "code user include",
+                "dataType": "string",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "load date",
+                "dataType": "dateTime",
+                "isHidden": true,
+                "sourceColumn": "original_name_column"
+              }
+            ],
+            "partitions": [
+              {
+                "name": "Partition",
+                "dataView": "full",
+                "source": {
+                  "type": "m",
+                  "expression": [
+                    "let",
+                    "    Source = #\"Odbc/dsn=PostgreSQL35W\",",
+                    "    user_databese_Database = Source{[Name=\"user_databese\",Kind=\"Database\"]}[Data],",
+                    "    database_Schema = user_databese_Database{[Name=\"database\",Kind=\"Schema\"]}[Data],",
+                    "    dim1_Table = database_Schema{[Name=\"dim1\",Kind=\"Table\"]}[Data]",
+                    "in",
+                    "    dim1_Table"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "dim5",
+            "columns": [
+              {
+                "name": "id column",
+                "dataType": "int64",
+                "isHidden": true,
+                "isKey": true,
+                "sourceColumn": "original_name_column",
+                "formatString": "0"
+              },
+              {
+                "name": "code column",
+                "dataType": "double",
+                "sourceColumn": "original_name_column",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "describe column",
+                "dataType": "string",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "insert date",
+                "dataType": "dateTime",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "code user include",
+                "dataType": "string",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "load date",
+                "dataType": "dateTime",
+                "isHidden": true,
+                "sourceColumn": "original_name_column"
+              }
+            ],
+            "partitions": [
+              {
+                "name": "Partition",
+                "dataView": "full",
+                "source": {
+                  "type": "m",
+                  "expression": [
+                    "let",
+                    "    Source = #\"Odbc/dsn=PostgreSQL35W\",",
+                    "    user_databese_Database = Source{[Name=\"user_databese\",Kind=\"Database\"]}[Data],",
+                    "    database_Schema = user_databese_Database{[Name=\"database\",Kind=\"Schema\"]}[Data],",
+                    "    dim1_Table = database_Schema{[Name=\"dim1\",Kind=\"Table\"]}[Data]",
+                    "in",
+                    "    dim1_Table"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "dim6",
+            "columns": [
+              {
+                "name": "id column",
+                "dataType": "int64",
+                "isHidden": true,
+                "isKey": true,
+                "sourceColumn": "original_name_column",
+                "formatString": "0"
+              },
+              {
+                "name": "code column",
+                "dataType": "double",
+                "sourceColumn": "original_name_column",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "describe column",
+                "dataType": "string",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "insert date",
+                "dataType": "dateTime",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "code user include",
+                "dataType": "string",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "load date",
+                "dataType": "dateTime",
+                "isHidden": true,
+                "sourceColumn": "original_name_column"
+              }
+            ],
+            "partitions": [
+              {
+                "name": "Partition",
+                "dataView": "full",
+                "source": {
+                  "type": "m",
+                  "expression": [
+                    "let",
+                    "    Source = #\"Odbc/dsn=PostgreSQL35W\",",
+                    "    user_databese_Database = Source{[Name=\"user_databese\",Kind=\"Database\"]}[Data],",
+                    "    database_Schema = user_databese_Database{[Name=\"database\",Kind=\"Schema\"]}[Data],",
+                    "    dim1_Table = database_Schema{[Name=\"dim1\",Kind=\"Table\"]}[Data]",
+                    "in",
+                    "    dim1_Table"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "dim7",
+            "columns": [
+              {
+                "name": "id column",
+                "dataType": "int64",
+                "isHidden": true,
+                "isKey": true,
+                "sourceColumn": "original_name_column",
+                "formatString": "0"
+              },
+              {
+                "name": "code column",
+                "dataType": "double",
+                "sourceColumn": "original_name_column",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "describe column",
+                "dataType": "string",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "insert date",
+                "dataType": "dateTime",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "code user include",
+                "dataType": "string",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "load date",
+                "dataType": "dateTime",
+                "isHidden": true,
+                "sourceColumn": "original_name_column"
+              }
+            ],
+            "partitions": [
+              {
+                "name": "Partition",
+                "dataView": "full",
+                "source": {
+                  "type": "m",
+                  "expression": [
+                    "let",
+                    "    Source = #\"Odbc/dsn=PostgreSQL35W\",",
+                    "    user_databese_Database = Source{[Name=\"user_databese\",Kind=\"Database\"]}[Data],",
+                    "    database_Schema = user_databese_Database{[Name=\"database\",Kind=\"Schema\"]}[Data],",
+                    "    dim1_Table = database_Schema{[Name=\"dim1\",Kind=\"Table\"]}[Data]",
+                    "in",
+                    "    dim1_Table"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "dim9",
+            "columns": [
+              {
+                "name": "id column",
+                "dataType": "int64",
+                "isHidden": true,
+                "isKey": true,
+                "sourceColumn": "original_name_column",
+                "formatString": "0"
+              },
+              {
+                "name": "code column",
+                "dataType": "double",
+                "sourceColumn": "original_name_column",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "describe column",
+                "dataType": "string",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "insert date",
+                "dataType": "dateTime",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "code user include",
+                "dataType": "string",
+                "sourceColumn": "original_name_column"
+              },
+              {
+                "name": "load date",
+                "dataType": "dateTime",
+                "isHidden": true,
+                "sourceColumn": "original_name_column"
+              }
+            ],
+            "partitions": [
+              {
+                "name": "Partition",
+                "dataView": "full",
+                "source": {
+                  "type": "m",
+                  "expression": [
+                    "let",
+                    "    Source = #\"Odbc/dsn=PostgreSQL35W\",",
+                    "    user_databese_Database = Source{[Name=\"user_databese\",Kind=\"Database\"]}[Data],",
+                    "    database_Schema = user_databese_Database{[Name=\"database\",Kind=\"Schema\"]}[Data],",
+                    "    dim1_Table = database_Schema{[Name=\"dim1\",Kind=\"Table\"]}[Data]",
+                    "in",
+                    "    dim1_Table"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "fact",
+            "columns": [
+              {
+                "name": "id",
+                "dataType": "int64",
+                "isHidden": true,
+                "sourceColumn": "original_name_column",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "id",
+                "dataType": "int64",
+                "isHidden": true,
+                "sourceColumn": "original_name_column",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "id",
+                "dataType": "int64",
+                "isHidden": true,
+                "sourceColumn": "original_name_column",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "id",
+                "dataType": "int64",
+                "isHidden": true,
+                "sourceColumn": "original_name_column",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "id",
+                "dataType": "int64",
+                "isHidden": true,
+                "sourceColumn": "original_name_column",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "id",
+                "dataType": "int64",
+                "isHidden": true,
+                "sourceColumn": "original_name_column",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "id",
+                "dataType": "int64",
+                "isHidden": true,
+                "sourceColumn": "original_name_column",
+                "summarizeBy": "none"
+              },
+              {
+                "name": "id",
+                "dataType": "int64",
+                "isHidden": true,
+                "sourceColumn": "original_name_column",
+                "formatString": "#,0"
+              }
+            ],
+            "partitions": [
+              {
+                "name": "Partition",
+                "dataView": "full",
+                "source": {
+                  "type": "m",
+                  "expression": [
+                    "let",
+                    "    Source = #\"Odbc/dsn=PostgreSQL35W\",",
+                    "    user_databese_Database = Source{[Name=\"user_databese\",Kind=\"Database\"]}[Data],",
+                    "    database_Schema = user_databese_Database{[Name=\"database\",Kind=\"Schema\"]}[Data],",
+                    "    fact_Table = database_Schema{[Name=\"fact\",Kind=\"Table\"]}[Data]",
+                    "in",
+                    "    fact_Table"
+                  ]
+                }
+              }
+            ],
+            "measures": [
+              {
+                "name": "total column",
+                "expression": "SUM([column])",
+                "formatString": "#,0"
+              },
+              {
+                "name": "total column",
+                "expression": "SUM([column])",
+                "formatString": "#,0"
+              },
+              {
+                "name": "total column",
+                "expression": "SUM([column])",
+                "formatString": "#,0"
+              }
+            ]
+          }
+        ],
+        "relationships": [
+          {
+            "name": "fd70f204-fa26-433a-a52f-fd70f204",
+            "fromTable": "fact",
+            "fromColumn": "idim6origem",
+            "toTable": "dim5",
+            "toColumn": "id Comarca",
+            "isActive": false
+          },
+          {
+            "name": "fd70f204-07e0-4080-a6c5-fd70f204",
+            "fromTable": "fact",
+            "fromColumn": "idim6fato",
+            "toTable": "dim6",
+            "toColumn": "id Comarca",
+            "isActive": false
+          },
+          {
+            "name": "fd70f204-e220-40f9-9d37-fd70f204",
+            "fromTable": "fact",
+            "fromColumn": "idim8origem",
+            "toTable": "dim7",
+            "toColumn": "id ",
+            "isActive": false
+          }
+        ],
+        "annotations": [
+          {
+            "name": "ClientCompatibilityLevel",
+            "value": "500"
+          }
+        ]
+      }
+    }
+  }
+}

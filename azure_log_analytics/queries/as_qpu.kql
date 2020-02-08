@@ -1,0 +1,7 @@
+AzureMetrics
+| where TimeGenerated > ago(1d)
+| where ResourceGroup == "<product-name>-<client-name>"
+| where ResourceProvider == "MICROSOFT.ANALYSISSERVICES"
+| where Type == "AzureMetrics"
+| where MetricName in ("qpu_metric")
+| sort by TimeGenerated desc

@@ -1,0 +1,63 @@
+[10A8:0EE4][2019-08-12T10:17:35]i001: Burn v3.11.1.2318, Windows v10.0 (Build 14393: Service Pack 0), path: C:\Users\SAJINS~1\AppData\Local\Temp\2\{D6B80F24-AE4E-4460-960C-D23A50F610C4}\.cr\GatewayInstall.exe
+[10A8:0EE4][2019-08-12T10:17:35]i000: Initializing string variable 'InstallationTelemetryEnabled' to value 'true'
+[10A8:0EE4][2019-08-12T10:17:35]i000: Initializing string variable 'ServiceEnvironment' to value 'prod'
+[10A8:0EE4][2019-08-12T10:17:35]i000: Initializing string variable 'InstallFolder' to value '[ProgramFiles64Folder]On-premises data gateway'
+[10A8:0EE4][2019-08-12T10:17:35]i000: Initializing string variable 'ProcessName' to value 'EnterpriseGatewayConfigurator'
+[10A8:0EE4][2019-08-12T10:17:35]i000: Initializing numeric variable 'PerMachineInstallation' to value '1'
+[10A8:0EE4][2019-08-12T10:17:35]i009: Command Line: '-burn.clean.room=C:\Users\sajinsights\Desktop\mpms-project_name\infrastructure\install_and_config_requirements\GatewayInstall.exe -burn.filehandle.attached=496 -burn.filehandle.self=500'
+[10A8:0EE4][2019-08-12T10:17:35]i000: Setting string variable 'WixBundleOriginalSource' to value 'C:\Users\sajinsights\Desktop\mpms-project_name\infrastructure\install_and_config_requirements\GatewayInstall.exe'
+[10A8:0EE4][2019-08-12T10:17:35]i000: Setting string variable 'WixBundleOriginalSourceFolder' to value 'C:\Users\sajinsights\Desktop\mpms-project_name\infrastructure\install_and_config_requirements\'
+[10A8:0EE4][2019-08-12T10:17:36]i000: Setting string variable 'WixBundleLog' to value 'C:\Users\SAJINS~1\AppData\Local\Temp\On-premises_data_gateway_20190812101736.log'
+[10A8:0EE4][2019-08-12T10:17:36]i000: Setting string variable 'WixBundleName' to value 'On-premises data gateway'
+[10A8:0EE4][2019-08-12T10:17:36]i000: Setting string variable 'WixBundleManufacturer' to value 'Microsoft Corporation'
+[10A8:0EE4][2019-08-12T10:17:38]i000: Loading managed bootstrapper application.
+[10A8:0EE4][2019-08-12T10:17:40]i000: Creating BA thread to run asynchronously.
+[10A8:0910][2019-08-12T10:17:43]i000: Setting string variable 'ServiceEnvironment' to value 'prod'
+[10A8:0910][2019-08-12T10:17:43]i000: ServiceEnvironment set to prod
+[10A8:0910][2019-08-12T10:17:48]i000: launching the on-premises data gateway installation
+[10A8:0EE4][2019-08-12T10:17:48]i100: Detect begin, 3 packages
+[10A8:0EE4][2019-08-12T10:17:48]i000: Product or related product not found: {D430A057-BAED-421C-A12C-C4EFF28670C6}
+[10A8:0EE4][2019-08-12T10:17:48]i000: Setting version variable 'GatewayComponentsVersion' to value '0.0.0.0'
+[10A8:0EE4][2019-08-12T10:17:48]i000: Setting string variable 'NETFRAMEWORK45' to value '461814'
+[10A8:0EE4][2019-08-12T10:17:48]i052: Condition 'NETFRAMEWORK45 >= 393295' evaluates to true.
+[10A8:0EE4][2019-08-12T10:17:48]i101: Detected package: NetFx46Web, state: Present, cached: None
+[10A8:0EE4][2019-08-12T10:17:48]i101: Detected package: GraphDataSetComponents.msi, state: Absent, cached: None
+[10A8:0EE4][2019-08-12T10:17:48]i101: Detected package: DataMovement.GatewayComponents.msi, state: Absent, cached: None
+[10A8:0EE4][2019-08-12T10:17:48]i199: Detect complete, result: 0x0
+[10A8:141C][2019-08-12T10:18:13]e000: Microsoft.PowerBI.DataMovement.UnblockEnterpriseGatewayInstall.exe exit code 0
+[10A8:0EE4][2019-08-12T10:18:13]i200: Plan begin, 3 packages, action: Install
+[10A8:0EE4][2019-08-12T10:18:13]w321: Skipping dependency registration on package with no dependency providers: NetFx46Web
+[10A8:0EE4][2019-08-12T10:18:13]i000: Setting string variable 'WixBundleRollbackLog_GraphDataSetComponents.msi' to value 'C:\Users\SAJINS~1\AppData\Local\Temp\On-premises_data_gateway_20190812101736_000_GraphDataSetComponents.msi_rollback.log'
+[10A8:0EE4][2019-08-12T10:18:13]i000: Setting string variable 'WixBundleLog_GraphDataSetComponents.msi' to value 'C:\Users\SAJINS~1\AppData\Local\Temp\On-premises_data_gateway_20190812101736_000_GraphDataSetComponents.msi.log'
+[10A8:0EE4][2019-08-12T10:18:13]i000: Setting string variable 'WixBundleRollbackLog_DataMovement.GatewayComponents.msi' to value 'C:\Users\SAJINS~1\AppData\Local\Temp\On-premises_data_gateway_20190812101736_001_DataMovement.GatewayComponents.msi_rollback.log'
+[10A8:0EE4][2019-08-12T10:18:13]i000: Setting string variable 'WixBundleLog_DataMovement.GatewayComponents.msi' to value 'C:\Users\SAJINS~1\AppData\Local\Temp\On-premises_data_gateway_20190812101736_001_DataMovement.GatewayComponents.msi.log'
+[10A8:0EE4][2019-08-12T10:18:13]i201: Planned package: NetFx46Web, state: Present, default requested: Present, ba requested: Present, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[10A8:0EE4][2019-08-12T10:18:13]i201: Planned package: GraphDataSetComponents.msi, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, cache: Yes, uncache: No, dependency: Register
+[10A8:0EE4][2019-08-12T10:18:13]i201: Planned package: DataMovement.GatewayComponents.msi, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, cache: Yes, uncache: No, dependency: Register
+[10A8:0EE4][2019-08-12T10:18:13]i299: Plan complete, result: 0x0
+[10A8:0EE4][2019-08-12T10:18:13]i300: Apply begin
+[10A8:0EE4][2019-08-12T10:18:13]i010: Launching elevated engine process.
+[10A8:0EE4][2019-08-12T10:18:23]i011: Launched elevated engine process.
+[10A8:0EE4][2019-08-12T10:18:23]i012: Connected to elevated engine.
+[173C:1740][2019-08-12T10:18:23]i358: Pausing automatic updates.
+[173C:1740][2019-08-12T10:18:24]i359: Paused automatic updates.
+[173C:1740][2019-08-12T10:18:24]i360: Creating a system restore point.
+[173C:1740][2019-08-12T10:18:24]i362: System restore disabled, system restore point not created.
+[173C:1740][2019-08-12T10:18:25]i320: Registering bundle dependency provider: {89753a40-6b7f-4c37-a132-41bf3512b077}, version: 3000.7.149.0
+[173C:1740][2019-08-12T10:18:25]i371: Updating session, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{89753a40-6b7f-4c37-a132-41bf3512b077}, resume: Active, restart initiated: No, disable resume: No
+[173C:1758][2019-08-12T10:20:05]i305: Verified acquired payload: GraphDataSetComponents.msi at path: C:\ProgramData\Package Cache\.unverified\GraphDataSetComponents.msi, moving to: C:\ProgramData\Package Cache\{92ABF8D6-F94D-493D-9389-981EFC6C3099}v15.7.149\GraphDataSetComponents.msi.
+[173C:1758][2019-08-12T10:20:06]i305: Verified acquired payload: DataMovement.GatewayComponents.msi at path: C:\ProgramData\Package Cache\.unverified\DataMovement.GatewayComponents.msi, moving to: C:\ProgramData\Package Cache\{3006F2BF-BEBC-4615-8892-6703B2FF0414}v15.7.149\DataMovement.GatewayComponents.msi.
+[173C:1740][2019-08-12T10:20:06]i323: Registering package dependency provider: {92ABF8D6-F94D-493D-9389-981EFC6C3099}, version: 15.7.149, package: GraphDataSetComponents.msi
+[173C:1740][2019-08-12T10:20:06]i301: Applying execute package: GraphDataSetComponents.msi, action: Install, path: C:\ProgramData\Package Cache\{92ABF8D6-F94D-493D-9389-981EFC6C3099}v15.7.149\GraphDataSetComponents.msi, arguments: ' ALLUSERS="1" ARPSYSTEMCOMPONENT="1" MSIFASTINSTALL="7" INSTALLLOCATION="C:\Program Files\On-premises data gateway"'
+[10A8:0EE4][2019-08-12T10:20:39]i319: Applied execute package: GraphDataSetComponents.msi, result: 0x0, restart: None
+[173C:1740][2019-08-12T10:20:39]i325: Registering dependency: {89753a40-6b7f-4c37-a132-41bf3512b077} on package provider: {92ABF8D6-F94D-493D-9389-981EFC6C3099}, package: GraphDataSetComponents.msi
+[173C:1740][2019-08-12T10:20:39]i323: Registering package dependency provider: {3006F2BF-BEBC-4615-8892-6703B2FF0414}, version: 15.7.149, package: DataMovement.GatewayComponents.msi
+[173C:1740][2019-08-12T10:20:39]i301: Applying execute package: DataMovement.GatewayComponents.msi, action: Install, path: C:\ProgramData\Package Cache\{3006F2BF-BEBC-4615-8892-6703B2FF0414}v15.7.149\DataMovement.GatewayComponents.msi, arguments: ' ALLUSERS="1" ARPSYSTEMCOMPONENT="1" MSIFASTINSTALL="7" INSTALLLOCATION="C:\Program Files\On-premises data gateway" SERVICEENVIRONMENT="prod" DEBUGCUSTOMACTIONS="" WIXFAILWHENDEFERRED=""'
+[10A8:0EE4][2019-08-12T10:21:36]i319: Applied execute package: DataMovement.GatewayComponents.msi, result: 0x0, restart: None
+[173C:1740][2019-08-12T10:21:36]i325: Registering dependency: {89753a40-6b7f-4c37-a132-41bf3512b077} on package provider: {3006F2BF-BEBC-4615-8892-6703B2FF0414}, package: DataMovement.GatewayComponents.msi
+[173C:1740][2019-08-12T10:21:36]i372: Session end, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{89753a40-6b7f-4c37-a132-41bf3512b077}, resume: ARP, restart: None, disable resume: No
+[10A8:0EE4][2019-08-12T10:21:38]e000: Access to the path 'C:\Program Files\On-premises data gateway\license.docx' is denied.
+[10A8:0EE4][2019-08-12T10:21:38]e000:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at Microsoft.PowerBI.DataMovement.Installer.BootstrapperApplicationDecorator.CopyEula()
