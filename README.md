@@ -91,8 +91,6 @@ Once service provisioning has begun, you must perform a task within the cloud en
 2. Inside the portal go to [Home > Automation-Accounts](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts)
 3. From the left menu, choose `Run as accounts` and confirm the creation of the certificate.
 
-<img src="images/run_as_account.PNG" align="center" height=auto width=50%/>
-
 <br/>
 
 ### On-premises Data Gateways
@@ -112,8 +110,6 @@ To set it up it must first be done on the machine running the local Gateway. The
 | Resource Name     | <nome_produto>-<nome_cliente>-gw       |
 | Location          | Brazil South                           |
 | Installation Name | <nome_produto>-<nome_cliente>-onpremisesgw |
-
-<img src="images/azure_gateway_step_1.png" align="center" height=auto width=30%/>
 
 **NOTES**:
 - It is important to use the same account that was logged into the data gateway on the local server.
