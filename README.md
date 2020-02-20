@@ -105,11 +105,11 @@ To set it up it must first be done on the machine running the local Gateway. The
 3. Click on them  `+ Add`
 - In the table below are configuration suggestions
 
-| Parameters        | Values                                |
+| Parameters        | Values                                 |
 |-------------------|----------------------------------------|
-| Resource Name     | <nome_produto>-<nome_cliente>-gw       |
+| Resource Name     | <product_name>-<client_name>-gw        |
 | Location          | Brazil South                           |
-| Installation Name | <nome_produto>-<nome_cliente>-onpremisesgw |
+| Installation Name | <product_name>-<client_name>-onpremisesgw |
 
 **NOTES**:
 - It is important to use the same account that was logged into the data gateway on the local server.
@@ -164,7 +164,7 @@ From 55 min, if the data source password has been set, all partitions except the
 ---
 
 ## Author
-- Bruno Aurélio Rôzza de Moura Campos (brunocampos01@gmail.com) (https://www.linkedin.com/in/brunocampos01/)
+- [Bruno Aurélio Rôzza de Moura Campos](https://www.linkedin.com/in/brunocampos01/) (brunocampos01@gmail.com) 
 
 ## Copyright
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Bruno A. R. M. Campos</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
