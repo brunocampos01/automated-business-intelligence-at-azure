@@ -1,5 +1,5 @@
 # Pré-requisitos
-- baixo custo (relatório montados, enviado no Teams)
+- baixo custo
 - ferramentas que o time já tenha conhecimento
 - controle total dos serviços e recursos
 - escalabilidade
