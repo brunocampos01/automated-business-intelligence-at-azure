@@ -1,0 +1,90 @@
+# Site information
+site_name: BI Indicadores
+site_url: http://governanca.git-unj.softplan.com.br/analytics/bi-indicadores/
+site_description: Documentação do projeto de BI indicadores Operacionais da Softplan
+site_author: Bruno Campos
+
+# Theme Configuration
+theme:
+    name: material
+    language: pt
+    logo: 'img/monitor.png'
+    favicon: 'img/favicon-32x32.png'
+    font:
+      text: Roboto
+      code: Roboto Mono
+    highlightjs: true
+    hljs_languages:
+        - dax
+        - python
+        - powershell
+        - bash
+        - sql
+        
+    # Don't include MkDocs' JavaScript
+    include_search_page: false
+    search_index_only: true
+    feature:
+        tabs: true
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.sane_lists
+  - markdown.extensions.abbr
+  - markdown.extensions.tables
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Copyright
+copyright: Desenvolvido por Bruno Campos https://github.com/brunocampos01
+
+# Customization
+extra:
+  # social:
+  #   - type: globe
+  #     link: https://www.softplan.com.br
+  #   - type: gitlab
+  #     link: https://git-unj.softplan.com.br/governanca/analytics/bi-indicadores
+  search:
+    language: 'en, pt'
+
+plugins:
+  - search    
+  #- bootstrap-tables
+
+# Page tree
+nav:
+  - Documentação Soft Analytics: 02_documentacao_soft_analytics.md
+  - Desenvolvimento do Projeto: 03_desenvolvimento_do_projeto.md
+  - Desenvolvimento SSAS: 03.01_desenvolvimento_ssas.md
+  - Gerenciamento SSAS: 03.02_gerenciamento_ssas.md
+  - Servidor de Produção: 03.03_servidor.md 
+  - FAQ: 10_faq.md
+  - Arquiteturas sugeridas para este projeto: 11_arquitetura_sugerida_projeto.md
