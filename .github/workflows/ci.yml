@@ -25,7 +25,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: pip
       run: |
-        pip install mkdocs=3.1.1
+        pip install mkdocs==3.1.1
         pip install mkdocs-material
         pip install pymdown-extensions
         pip install pygments
