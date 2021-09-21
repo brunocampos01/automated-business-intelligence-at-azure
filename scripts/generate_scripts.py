@@ -42,7 +42,7 @@ path_dest_role_readers = ''.join(path_cloud + path_dest_tmsl + 'role_readers.jso
 path_partitions = ''.join(path_cloud + '/azure_analysis_services/partitions/')
 
 
-def get_partitions_name(path_partitions: str, partition_to_exclude: str):
+def get_partitions_name(path_partitions: str, partition_to_exclude: str) -> str:
     """ Read all files in path_partitions and create a list
     :return: string in format of tuple because powershell need this ()
     special caraters.
@@ -59,7 +59,7 @@ def get_partitions_name(path_partitions: str, partition_to_exclude: str):
     return str(partition_tuple)
 
 
-def prepare_users_names_tmsl(list_users: str):
+def prepare_users_names_tmsl(list_users: str) -> str:
     list_users = list(list_users.split(','))
     list_name = []
 
@@ -71,7 +71,7 @@ def prepare_users_names_tmsl(list_users: str):
     return str(json.dumps(list_name))
 
 
-def prepare_tmsl(tmsl: str, local: str):
+def prepare_tmsl(tmsl: str, local: str) -> str:
     """Prepare the path from local
     :return:
         Path of file tmsl
