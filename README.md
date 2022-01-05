@@ -1,12 +1,6 @@
 # Provisioning Services in the Cloud Environment
-Software, libraries, configurations, and cloud resource provisioning become transparent to the user who will use this project.
-The services provided with this project are:
-- Resource Group
-- Azure Analysis Services
-- Azure Automation Account
-- Azure Log Analytics
-- Azure Storage Account
-
+This project provisioning all infrastructure to create environment data warehouse in Azure.
+<br/>
 In addition, all scripts that support Azure Analysis Services are dynamically generated from a configuration file(`set_variables.tfvars`).
 
 Below are the steps that must be followed to prepare the environment and run the automation:
