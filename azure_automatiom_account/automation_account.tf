@@ -75,7 +75,7 @@ resource "azurerm_automation_runbook" "create_db_as_runbook" {
     name                        = "${var.product_client_name_lower}-create-db-as-runbook"
     location                    = var.location
     resource_group_name         = azurerm_resource_group.rg.name
-    account_name                = azurerm_automation_account.automation_account.name
+    automation_account_name     = azurerm_automation_account.automation_account.name
     log_verbose                 = "true"
     log_progress                = "true"
     description                 = "Create db in Analysis Services"
@@ -98,7 +98,7 @@ resource "azurerm_automation_runbook" "start_stop_as_runbook" {
     name                        = "${var.product_client_name_lower}-start-stop-as-runbook"
     location                    = var.location
     resource_group_name         = azurerm_resource_group.rg.name
-    account_name                = azurerm_automation_account.automation_account.name
+    automation_account_name     = azurerm_automation_account.automation_account.name
     log_verbose                 = "true"
     log_progress                = "true"
     description                 = "Stat and stop Analysis Services"
@@ -121,7 +121,7 @@ resource "azurerm_automation_runbook" "apply_roles_as_runbook" {
     name                        = "${var.product_client_name_lower}-apply-roles-as-runbook"
     location                    = var.location
     resource_group_name         = azurerm_resource_group.rg.name
-    account_name                = azurerm_automation_account.automation_account.name
+    automation_account_name     = azurerm_automation_account.automation_account.name
     log_verbose                 = "true"
     log_progress                = "true"
     description                 = "Apply roles in Model Database"
@@ -144,7 +144,7 @@ resource "azurerm_automation_runbook" "restore_bkp_as_runbook" {
     name                        = "${var.product_client_name_lower}-restore-bkp-as-runbook"
     location                    = var.location
     resource_group_name         = azurerm_resource_group.rg.name
-    account_name                = azurerm_automation_account.automation_account.name
+    automation_account_name     = azurerm_automation_account.automation_account.name
     log_verbose                 = "true"
     log_progress                = "true"
     description                 = "Restore backup analysis services"
@@ -167,7 +167,7 @@ resource "azurerm_automation_runbook" "send_email_runbook" {
     name                        = "${var.product_client_name_lower}-send-email-runbook"
     location                    = var.location
     resource_group_name         = azurerm_resource_group.rg.name
-    account_name                = azurerm_automation_account.automation_account.name
+    automation_account_name     = azurerm_automation_account.automation_account.name
     log_verbose                 = "true"
     log_progress                = "true"
     description                 = "Stat and stop anlysis services"
@@ -189,7 +189,7 @@ resource "azurerm_automation_runbook" "process_large_volume_tables_as_runbook" {
     name                        = "${var.product_client_name_lower}-process-large-volume-tables-as-runbook"
     location                    = var.location
     resource_group_name         = azurerm_resource_group.rg.name
-    account_name                = azurerm_automation_account.automation_account.name
+    automation_account_name     = azurerm_automation_account.automation_account.name
     log_verbose                 = "true"
     log_progress                = "true"
     description                 = "Process large volume table'"
@@ -211,7 +211,7 @@ resource "azurerm_automation_runbook" "process_partitions_as_runbook" {
     name                        = "${var.product_client_name_lower}-daily-process-partitions-as-runbook"
     location                    = var.location
     resource_group_name         = azurerm_resource_group.rg.name
-    account_name                = azurerm_automation_account.automation_account.name
+    automation_account_name     = azurerm_automation_account.automation_account.name
     log_verbose                 = "true"
     log_progress                = "true"
     description                 = "Process daily partitions"
@@ -233,7 +233,7 @@ resource "azurerm_automation_runbook" "process_partitions_monthly_as_runbook" {
     name                        = "${var.product_client_name_lower}-monthly-process-partitions-as-runbook"
     location                    = var.location
     resource_group_name         = azurerm_resource_group.rg.name
-    account_name                = azurerm_automation_account.automation_account.name
+    automation_account_name     = azurerm_automation_account.automation_account.name
     log_verbose                 = "true"
     log_progress                = "true"
     description                 = "Process monthly partitions"
@@ -255,7 +255,7 @@ resource "azurerm_automation_runbook" "update_bkp_as_runbook" {
     name                        = "${var.product_client_name_lower}-update-bkp-as-runbook"
     location                    = var.location
     resource_group_name         = azurerm_resource_group.rg.name
-    account_name                = azurerm_automation_account.automation_account.name
+    automation_account_name     = azurerm_automation_account.automation_account.name
     log_verbose                 = "true"
     log_progress                = "true"
     description                 = "Update backup file of Analysis Services"
@@ -277,7 +277,7 @@ resource "azurerm_automation_runbook" "update_modules_powershell_runbook" {
     name                        = "${var.product_client_name_lower}-update-modules-runbook"
     location                    = var.location
     resource_group_name         = azurerm_resource_group.rg.name
-    account_name                = azurerm_automation_account.automation_account.name
+    automation_account_name     = azurerm_automation_account.automation_account.name
     log_verbose                 = "true"
     log_progress                = "true"
     description                 = "Update modules powershell"
@@ -299,7 +299,7 @@ resource "azurerm_automation_runbook" "update_certificate_runbook" {
     name                        = "${var.product_client_name_lower}-update-certificate-runbook"
     location                    = var.location
     resource_group_name         = azurerm_resource_group.rg.name
-    account_name                = azurerm_automation_account.automation_account.name
+    automation_account_name     = azurerm_automation_account.automation_account.name
     log_verbose                 = "true"
     log_progress                = "true"
     description                 = "Update certificate of 'run as account.'"
@@ -372,7 +372,7 @@ resource "azurerm_automation_schedule" "process_partitions_monthly_as_schedule" 
     automation_account_name     = azurerm_automation_account.automation_account.name
     description                 = "Process monthly partitions"
     frequency                   = "Month"
-    month_days                  = ["1"]
+    month_days                  = [1]
     timezone                    = "E. South America Standard Time"
     start_time                  = timeadd(timestamp(), "70m")
 }
@@ -416,7 +416,7 @@ resource "azurerm_automation_schedule" "update_certificate_schedule" {
     automation_account_name     = azurerm_automation_account.automation_account.name
     description                 = "Update Automation Account certificate."
     frequency                   = "Month"
-    month_days                  = ["1"]
+    month_days                  = [1]
     timezone                    = "E. South America Standard Time"
     start_time                  = timeadd(timestamp(), "90m")
 }

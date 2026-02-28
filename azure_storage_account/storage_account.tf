@@ -21,7 +21,7 @@ resource "azurerm_storage_account" "storage_account" {
 resource "azurerm_storage_container" "container_analysis_services" {
     name                        = "analysis-services-container"
     storage_account_name        = azurerm_storage_account.storage_account.name
-    container_access_type       = "container"
+    container_access_type       = "private"
 }
 
 #******************************************************************************
@@ -30,10 +30,10 @@ resource "azurerm_storage_container" "container_analysis_services" {
 data "azurerm_storage_account_blob_container_sas" "account_sas" {
     connection_string           = azurerm_storage_account.storage_account.primary_connection_string
     container_name              = azurerm_storage_container.container_analysis_services.name
-    https_only                  = false
+    https_only                  = true
 
     start                       = "2019-12-26"
-    expiry                      = "2025-01-01"
+    expiry                      = "2030-01-01"
 
     permissions {
         read                    = true
