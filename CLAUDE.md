@@ -6,6 +6,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This project provisions a complete Azure Business Intelligence infrastructure using Terraform. It creates and configures Azure Analysis Services for OLAP data modeling, backed by Azure Storage (for backups), Azure Automation Account (for scheduled PowerShell runbooks), and Azure Log Analytics. All PowerShell runbooks and TMSL scripts are dynamically generated from a single config file (`set_variables.tfvars`) via a Python script.
 
+## Git Workflow
+
+Always work on a feature branch — never commit directly to `master`.
+
+```bash
+git checkout -b <type>/<short-description>   # e.g. fix/expired-sas-token
+# ... make changes and commit ...
+git push -u origin <branch>
+gh pr create --title "..." --body "..."
+gh pr merge <number> --merge --delete-branch
+git checkout master && git reset --hard origin/master
+```
+
+`gh` CLI is installed and authenticated (`brunocampos01`). Use it for all PR operations.
+
 ## Terraform Commands
 
 All Terraform operations are run from the `main/` directory:
